@@ -1,0 +1,46 @@
+{
+  "step_single_solids_valid": 35,
+  "assembled_interference_pairs": 0,
+  "guide_motion_configurations": 27,
+  "flip_positions_checked": 13,
+  "angle_reference": {
+    "edge_y_mm": -70,
+    "knife_midplane_z_mm": 300,
+    "pivot_y_mm": 100,
+    "rod_offset_mm": 44
+  },
+  "angle_pivot_heights_mm": {
+    "15": 391.104,
+    "16": 394.52,
+    "17": 397.985,
+    "18": 401.501,
+    "19": 405.071,
+    "20": 408.699,
+    "21": 412.387,
+    "22": 416.14,
+    "23": 419.961,
+    "24": 423.853,
+    "25": 427.821
+  },
+  "limitations": [
+    "Analytical CAD checks only; not physically printed or load tested.",
+    "Angle scale references center of a straight edge; yaw along long or curved blades changes local bevel angle.",
+    "Fasteners are generic reference envelopes, not thread-accurate models."
+  ],
+  "assembly_step_valid": true,
+  "assembly_solid_count": 138,
+  "guide_stroke_mm": [
+    -25,
+    25
+  ],
+  "guide_yaw_degrees": [
+    -35,
+    35
+  ],
+  "flip_handle_envelope_mm": [
+    100,
+    30,
+    20
+  ],
+  "scope": "Printed bodies and major purchased reference components checked for interference; minor fastener threads and head clearances require physical dry fit."
+}

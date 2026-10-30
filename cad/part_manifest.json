@@ -1,0 +1,352 @@
+{
+  "01_ballast_base": {
+    "printed": true,
+    "solids": 1,
+    "volume_mm3": 1006641.4,
+    "bounds_mm": [
+      300.0,
+      310.0,
+      32.0
+    ]
+  },
+  "03_pedestal_1": {
+    "printed": true,
+    "solids": 1,
+    "volume_mm3": 337941.3,
+    "bounds_mm": [
+      64.0,
+      20.0,
+      280.0
+    ]
+  },
+  "03_pedestal_2": {
+    "printed": true,
+    "solids": 1,
+    "volume_mm3": 337941.3,
+    "bounds_mm": [
+      64.0,
+      20.0,
+      280.0
+    ]
+  },
+  "04_rotor_lower_jaw": {
+    "printed": true,
+    "solids": 1,
+    "volume_mm3": 56203.9,
+    "bounds_mm": [
+      96.0,
+      131.0,
+      26.0
+    ]
+  },
+  "05_upper_jaw": {
+    "printed": true,
+    "solids": 1,
+    "volume_mm3": 18527.2,
+    "bounds_mm": [
+      96.0,
+      49.0,
+      14.5
+    ]
+  },
+  "16_blade_shim_3mm": {
+    "printed": true,
+    "solids": 1,
+    "volume_mm3": 9360.0,
+    "bounds_mm": [
+      90.0,
+      16.0,
+      6.5
+    ]
+  },
+  "06_half_turn_disc": {
+    "printed": true,
+    "solids": 1,
+    "volume_mm3": 22784.9,
+    "bounds_mm": [
+      68.0,
+      8.0,
+      68.0
+    ]
+  },
+  "07_stop_bridge": {
+    "printed": true,
+    "solids": 1,
+    "volume_mm3": 86915.4,
+    "bounds_mm": [
+      80.0,
+      12.0,
+      268.0
+    ]
+  },
+  "02_structural_lid": {
+    "printed": true,
+    "solids": 1,
+    "volume_mm3": 555701.1,
+    "bounds_mm": [
+      300.0,
+      310.0,
+      6.0
+    ]
+  },
+  "08a_tower_lower_1": {
+    "printed": true,
+    "solids": 1,
+    "volume_mm3": 205854.5,
+    "bounds_mm": [
+      40.0,
+      54.0,
+      202.0
+    ]
+  },
+  "08a_tower_lower_2": {
+    "printed": true,
+    "solids": 1,
+    "volume_mm3": 205854.5,
+    "bounds_mm": [
+      40.0,
+      54.0,
+      202.0
+    ]
+  },
+  "08b_tower_upper": {
+    "printed": true,
+    "solids": 1,
+    "volume_mm3": 547703.2,
+    "bounds_mm": [
+      260.0,
+      24.0,
+      270.0
+    ]
+  },
+  "08c_tower_splice_1": {
+    "printed": true,
+    "solids": 1,
+    "volume_mm3": 55957.8,
+    "bounds_mm": [
+      40.0,
+      12.0,
+      120.0
+    ]
+  },
+  "08c_tower_splice_2": {
+    "printed": true,
+    "solids": 1,
+    "volume_mm3": 55957.8,
+    "bounds_mm": [
+      40.0,
+      12.0,
+      120.0
+    ]
+  },
+  "09_height_carriage": {
+    "printed": true,
+    "solids": 1,
+    "volume_mm3": 142439.9,
+    "bounds_mm": [
+      260.0,
+      72.0,
+      40.0
+    ]
+  },
+  "10_yaw_plate": {
+    "printed": true,
+    "solids": 1,
+    "volume_mm3": 19227.1,
+    "bounds_mm": [
+      64.0,
+      40.0,
+      8.0
+    ]
+  },
+  "11_pitch_cheek_1": {
+    "printed": true,
+    "solids": 1,
+    "volume_mm3": 10198.6,
+    "bounds_mm": [
+      10.0,
+      34.0,
+      38.0
+    ]
+  },
+  "11_pitch_cheek_2": {
+    "printed": true,
+    "solids": 1,
+    "volume_mm3": 10198.6,
+    "bounds_mm": [
+      10.0,
+      34.0,
+      38.0
+    ]
+  },
+  "12_sliding_pitch_bushing": {
+    "printed": true,
+    "solids": 1,
+    "volume_mm3": 22394.1,
+    "bounds_mm": [
+      44.0,
+      45.8,
+      36.23
+    ]
+  },
+  "13_stone_carrier": {
+    "printed": true,
+    "solids": 1,
+    "volume_mm3": 200193.9,
+    "bounds_mm": [
+      80.0,
+      215.8,
+      108.89
+    ]
+  },
+  "17_stone_keeper_1": {
+    "printed": true,
+    "solids": 1,
+    "volume_mm3": 851.9,
+    "bounds_mm": [
+      12.0,
+      14.53,
+      17.52
+    ]
+  },
+  "17_stone_keeper_2": {
+    "printed": true,
+    "solids": 1,
+    "volume_mm3": 851.9,
+    "bounds_mm": [
+      12.0,
+      14.53,
+      17.52
+    ]
+  },
+  "17_stone_keeper_3": {
+    "printed": true,
+    "solids": 1,
+    "volume_mm3": 851.9,
+    "bounds_mm": [
+      12.0,
+      14.53,
+      17.52
+    ]
+  },
+  "17_stone_keeper_4": {
+    "printed": true,
+    "solids": 1,
+    "volume_mm3": 851.9,
+    "bounds_mm": [
+      12.0,
+      14.53,
+      17.52
+    ]
+  },
+  "14_floating_end_pad": {
+    "printed": true,
+    "solids": 1,
+    "volume_mm3": 9187.6,
+    "bounds_mm": [
+      65.0,
+      13.85,
+      24.6
+    ]
+  },
+  "15_rod_stop_1": {
+    "printed": true,
+    "solids": 1,
+    "volume_mm3": 3070.2,
+    "bounds_mm": [
+      20.0,
+      18.12,
+      22.9
+    ]
+  },
+  "15_rod_stop_2": {
+    "printed": true,
+    "solids": 1,
+    "volume_mm3": 3070.2,
+    "bounds_mm": [
+      20.0,
+      18.12,
+      22.9
+    ]
+  },
+  "REF_whetstone_60x180x30": {
+    "printed": false,
+    "solids": 1,
+    "volume_mm3": 324000.0,
+    "bounds_mm": [
+      60.0,
+      179.41,
+      89.75
+    ]
+  },
+  "REF_guide_rod_8x500": {
+    "printed": false,
+    "solids": 1,
+    "volume_mm3": 25132.7,
+    "bounds_mm": [
+      8.0,
+      472.58,
+      178.53
+    ]
+  },
+  "REF_M10_axle_100": {
+    "printed": false,
+    "solids": 1,
+    "volume_mm3": 7854.0,
+    "bounds_mm": [
+      10.0,
+      100.0,
+      10.0
+    ]
+  },
+  "REF_stop_pin_M5": {
+    "printed": false,
+    "solids": 1,
+    "volume_mm3": 785.4,
+    "bounds_mm": [
+      5.0,
+      40.0,
+      5.0
+    ]
+  },
+  "REF_locking_pin_5": {
+    "printed": false,
+    "solids": 1,
+    "volume_mm3": 589.0,
+    "bounds_mm": [
+      5.0,
+      30.0,
+      5.0
+    ]
+  },
+  "REF_yaw_pivot_M8": {
+    "printed": false,
+    "solids": 1,
+    "volume_mm3": 1508.0,
+    "bounds_mm": [
+      8.0,
+      8.0,
+      30.0
+    ]
+  },
+  "REF_blade_envelope": {
+    "printed": false,
+    "solids": 1,
+    "volume_mm3": 36000.0,
+    "bounds_mm": [
+      300.0,
+      45.0,
+      3.0
+    ]
+  },
+  "REF_handle_envelope": {
+    "printed": false,
+    "solids": 1,
+    "volume_mm3": 60000.0,
+    "bounds_mm": [
+      100.0,
+      30.0,
+      20.0
+    ]
+  }
+}

@@ -1,0 +1,2357 @@
+{
+  "01_ribbed_bench_base": {
+    "printed": true,
+    "installed": true,
+    "group": "fixed",
+    "role": "bench-clamped ribbed base; no ballast and no freestanding rating",
+    "solids": 1,
+    "volume_mm3": 306445.517,
+    "bounds_mm": [
+      200.0,
+      240.0,
+      10.0
+    ],
+    "file": "assembly_parts/01_ribbed_bench_base.step",
+    "print_stl": "print/01_ribbed_bench_base.stl",
+    "print_file": "print/01_ribbed_bench_base.step",
+    "print_bounds_mm": [
+      200.0,
+      240.0,
+      10.005
+    ]
+  },
+  "02_open_portal_frame": {
+    "printed": true,
+    "installed": true,
+    "group": "fixed",
+    "role": "braced guide frame with central rod window and profile-specific scale",
+    "solids": 1,
+    "volume_mm3": 379566.282,
+    "bounds_mm": [
+      200.0,
+      68.0,
+      290.0
+    ],
+    "file": "assembly_parts/02_open_portal_frame.step",
+    "print_stl": "print/02_open_portal_frame.stl",
+    "print_file": "print/02_open_portal_frame.step",
+    "print_bounds_mm": [
+      200.0,
+      290.004,
+      68.0
+    ]
+  },
+  "18_fine_height_knob": {
+    "printed": true,
+    "installed": true,
+    "group": "fixed",
+    "role": "fine-height knob with captive metal jam nuts; do not carry fixture by knob",
+    "solids": 1,
+    "volume_mm3": 7720.781,
+    "bounds_mm": [
+      31.704,
+      31.704,
+      12.0
+    ],
+    "file": "assembly_parts/18_fine_height_knob.step",
+    "print_stl": "print/18_fine_height_knob.stl",
+    "print_file": "print/18_fine_height_knob.step",
+    "print_bounds_mm": [
+      31.719,
+      31.719,
+      12.016
+    ]
+  },
+  "03_fixed_cartridge_dock": {
+    "printed": true,
+    "installed": true,
+    "group": "fixed",
+    "role": "ribbed stationary registration dock",
+    "solids": 1,
+    "volume_mm3": 249874.607,
+    "bounds_mm": [
+      112.0,
+      46.0,
+      162.0
+    ],
+    "file": "assembly_parts/03_fixed_cartridge_dock.step",
+    "print_stl": "print/03_fixed_cartridge_dock.stl",
+    "print_file": "print/03_fixed_cartridge_dock.step",
+    "print_bounds_mm": [
+      112.0,
+      46.002,
+      162.003
+    ]
+  },
+  "04_removable_knife_cartridge": {
+    "printed": true,
+    "installed": true,
+    "group": "cartridge",
+    "role": "full-width lower jaw and symmetric registration flange",
+    "solids": 1,
+    "volume_mm3": 74680.786,
+    "bounds_mm": [
+      124.0,
+      68.0,
+      38.0
+    ],
+    "file": "assembly_parts/04_removable_knife_cartridge.step",
+    "print_stl": "print/04_removable_knife_cartridge.stl",
+    "print_file": "print/04_removable_knife_cartridge.step",
+    "print_bounds_mm": [
+      124.0,
+      38.0,
+      68.002
+    ]
+  },
+  "05_upper_knife_jaw": {
+    "printed": true,
+    "installed": true,
+    "group": "cartridge",
+    "role": "thin-nose jaw with captive metal jack nuts",
+    "solids": 1,
+    "volume_mm3": 29753.215,
+    "bounds_mm": [
+      124.0,
+      47.0,
+      7.0
+    ],
+    "file": "assembly_parts/05_upper_knife_jaw.step",
+    "print_stl": "print/05_upper_knife_jaw.stl",
+    "print_file": "print/05_upper_knife_jaw.step",
+    "print_bounds_mm": [
+      7.005,
+      47.0,
+      124.0
+    ]
+  },
+  "06_blade_shim_3mm": {
+    "printed": true,
+    "installed": true,
+    "group": "cartridge",
+    "role": "selected blade-centering shim",
+    "solids": 1,
+    "volume_mm3": 3904.0,
+    "bounds_mm": [
+      122.0,
+      16.0,
+      2.0
+    ],
+    "file": "assembly_parts/06_blade_shim_3mm.step",
+    "print_stl": "print/06_blade_shim_3mm.stl",
+    "print_file": "print/06_blade_shim_3mm.step",
+    "print_bounds_mm": [
+      122.0,
+      16.0,
+      2.0
+    ]
+  },
+  "REF_blade_envelope": {
+    "printed": false,
+    "installed": true,
+    "group": "cartridge",
+    "role": "300 mm tapered dummy-blade envelope",
+    "solids": 1,
+    "volume_mm3": 27900.0,
+    "bounds_mm": [
+      300.0,
+      45.0,
+      3.0
+    ],
+    "file": "assembly_parts/REF_blade_envelope.step"
+  },
+  "REF_handle_envelope": {
+    "printed": false,
+    "installed": true,
+    "group": "cartridge",
+    "role": "reference handle; cartridge is flipped away from fixture",
+    "solids": 1,
+    "volume_mm3": 60000.0,
+    "bounds_mm": [
+      100.0,
+      30.0,
+      20.0
+    ],
+    "file": "assembly_parts/REF_handle_envelope.step"
+  },
+  "05_height_carriage": {
+    "printed": true,
+    "installed": true,
+    "group": "height",
+    "role": "fine-adjustable shelf with independent side clamps",
+    "solids": 1,
+    "volume_mm3": 47838.988,
+    "bounds_mm": [
+      184.0,
+      70.0,
+      32.0
+    ],
+    "file": "assembly_parts/05_height_carriage.step",
+    "print_stl": "print/05_height_carriage.stl",
+    "print_file": "print/05_height_carriage.step",
+    "print_bounds_mm": [
+      184.0,
+      70.0,
+      32.003
+    ]
+  },
+  "06_yaw_plate": {
+    "printed": true,
+    "installed": true,
+    "group": "yaw",
+    "role": "yaw plate on narrow shelf, leaving cheek nuts accessible",
+    "solids": 1,
+    "volume_mm3": 15960.38,
+    "bounds_mm": [
+      64.0,
+      46.0,
+      6.0
+    ],
+    "file": "assembly_parts/06_yaw_plate.step",
+    "print_stl": "print/06_yaw_plate.stl",
+    "print_file": "print/06_yaw_plate.step",
+    "print_bounds_mm": [
+      64.0,
+      46.0,
+      6.008
+    ]
+  },
+  "07_pitch_cheek_1": {
+    "printed": true,
+    "installed": true,
+    "group": "yaw",
+    "role": "8 mm trunnion engagement",
+    "solids": 1,
+    "volume_mm3": 8777.241,
+    "bounds_mm": [
+      10.0,
+      30.0,
+      38.0
+    ],
+    "file": "assembly_parts/07_pitch_cheek_1.step",
+    "print_stl": "print/07_pitch_cheek_1.stl",
+    "print_file": "print/07_pitch_cheek_1.step",
+    "print_bounds_mm": [
+      10.007,
+      30.0,
+      38.004
+    ]
+  },
+  "07_pitch_cheek_2": {
+    "printed": true,
+    "installed": true,
+    "group": "yaw",
+    "role": "8 mm trunnion engagement",
+    "solids": 1,
+    "volume_mm3": 8777.241,
+    "bounds_mm": [
+      10.0,
+      30.0,
+      38.0
+    ],
+    "file": "assembly_parts/07_pitch_cheek_2.step",
+    "print_stl": "print/07_pitch_cheek_2.stl",
+    "print_file": "print/07_pitch_cheek_2.step",
+    "print_bounds_mm": [
+      10.007,
+      30.0,
+      38.004
+    ]
+  },
+  "08_pitch_housing": {
+    "printed": true,
+    "installed": true,
+    "group": "pitch",
+    "role": "replaceable sleeve housing",
+    "solids": 1,
+    "volume_mm3": 20823.666,
+    "bounds_mm": [
+      52.0,
+      45.796,
+      36.233
+    ],
+    "file": "assembly_parts/08_pitch_housing.step",
+    "print_stl": "print/08_pitch_housing.stl",
+    "print_file": "print/08_pitch_housing.step",
+    "print_bounds_mm": [
+      52.007,
+      28.0,
+      40.008
+    ]
+  },
+  "09_calibrated_guide_sleeve": {
+    "printed": true,
+    "installed": true,
+    "group": "pitch",
+    "role": "replaceable 8.1 ID / 12 OD / 40 mm sleeve",
+    "solids": 1,
+    "volume_mm3": 2462.694,
+    "bounds_mm": [
+      12.0,
+      41.692,
+      24.957
+    ],
+    "file": "assembly_parts/09_calibrated_guide_sleeve.step",
+    "print_stl": "print/09_calibrated_guide_sleeve.stl",
+    "print_file": "print/09_calibrated_guide_sleeve.step",
+    "print_bounds_mm": [
+      12.008,
+      12.008,
+      40.008
+    ]
+  },
+  "15_split_rod_stop_1": {
+    "printed": true,
+    "installed": true,
+    "group": "rod_stops",
+    "role": "captive-nut split travel collar",
+    "solids": 1,
+    "volume_mm3": 3584.37,
+    "bounds_mm": [
+      20.0,
+      18.801,
+      24.777
+    ],
+    "file": "assembly_parts/15_split_rod_stop_1.step",
+    "print_stl": "print/15_split_rod_stop_1.stl",
+    "print_file": "print/15_split_rod_stop_1.step",
+    "print_bounds_mm": [
+      20.022,
+      22.011,
+      12.036
+    ]
+  },
+  "15_split_rod_stop_2": {
+    "printed": true,
+    "installed": true,
+    "group": "rod_stops",
+    "role": "captive-nut split travel collar",
+    "solids": 1,
+    "volume_mm3": 3584.37,
+    "bounds_mm": [
+      20.0,
+      18.801,
+      24.777
+    ],
+    "file": "assembly_parts/15_split_rod_stop_2.step",
+    "print_stl": "print/15_split_rod_stop_2.stl",
+    "print_file": "print/15_split_rod_stop_2.step",
+    "print_bounds_mm": [
+      20.022,
+      22.011,
+      12.036
+    ]
+  },
+  "13_ribbed_stone_cassette": {
+    "printed": true,
+    "installed": true,
+    "group": "stone",
+    "role": "fixed corner ledges and split shaft clamps",
+    "solids": 1,
+    "volume_mm3": 83976.117,
+    "bounds_mm": [
+      82.0,
+      190.854,
+      113.16
+    ],
+    "file": "assembly_parts/13_ribbed_stone_cassette.step",
+    "print_stl": "print/13_ribbed_stone_cassette.stl",
+    "print_file": "print/13_ribbed_stone_cassette.step",
+    "print_bounds_mm": [
+      82.0,
+      190.002,
+      59.0
+    ]
+  },
+  "14_removable_end_gate": {
+    "printed": true,
+    "installed": true,
+    "group": "stone",
+    "role": "two-screw axial stone gate",
+    "solids": 1,
+    "volume_mm3": 17097.536,
+    "bounds_mm": [
+      80.0,
+      17.951,
+      35.881
+    ],
+    "file": "assembly_parts/14_removable_end_gate.step",
+    "print_stl": "print/14_removable_end_gate.stl",
+    "print_file": "print/14_removable_end_gate.step",
+    "print_bounds_mm": [
+      80.0,
+      6.003,
+      36.0
+    ]
+  },
+  "REF_whetstone": {
+    "printed": false,
+    "installed": true,
+    "group": "stone",
+    "role": "purchased double-sided stone; working face at localZ0",
+    "solids": 1,
+    "volume_mm3": 324000.0,
+    "bounds_mm": [
+      60.0,
+      179.405,
+      89.754
+    ],
+    "file": "assembly_parts/REF_whetstone.step",
+    "print_rotation": {
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 160.0
+    },
+    "bom_name": "stone_60x180x30"
+  },
+  "REF_stone_backing_1": {
+    "printed": false,
+    "installed": true,
+    "group": "stone",
+    "role": "firm resilient roof backing",
+    "solids": 1,
+    "volume_mm3": 1200.0,
+    "bounds_mm": [
+      60.0,
+      10.081,
+      5.3
+    ],
+    "file": "assembly_parts/REF_stone_backing_1.step",
+    "print_rotation": {
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 160.0
+    }
+  },
+  "REF_stone_backing_2": {
+    "printed": false,
+    "installed": true,
+    "group": "stone",
+    "role": "firm resilient roof backing",
+    "solids": 1,
+    "volume_mm3": 1200.0,
+    "bounds_mm": [
+      60.0,
+      10.081,
+      5.3
+    ],
+    "file": "assembly_parts/REF_stone_backing_2.step",
+    "print_rotation": {
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 160.0
+    }
+  },
+  "REF_stone_backing_3": {
+    "printed": false,
+    "installed": true,
+    "group": "stone",
+    "role": "firm resilient roof backing",
+    "solids": 1,
+    "volume_mm3": 1200.0,
+    "bounds_mm": [
+      60.0,
+      10.081,
+      5.3
+    ],
+    "file": "assembly_parts/REF_stone_backing_3.step",
+    "print_rotation": {
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 160.0
+    }
+  },
+  "REF_end_pad_fixed": {
+    "printed": false,
+    "installed": true,
+    "group": "stone",
+    "role": "soft end cushion",
+    "solids": 1,
+    "volume_mm3": 3600.0,
+    "bounds_mm": [
+      60.0,
+      12.14,
+      28.875
+    ],
+    "file": "assembly_parts/REF_end_pad_fixed.step",
+    "print_rotation": {
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 160.0
+    }
+  },
+  "REF_end_pad_gate": {
+    "printed": false,
+    "installed": true,
+    "group": "stone",
+    "role": "soft end cushion",
+    "solids": 1,
+    "volume_mm3": 3600.0,
+    "bounds_mm": [
+      60.0,
+      12.14,
+      28.875
+    ],
+    "file": "assembly_parts/REF_end_pad_gate.step",
+    "print_rotation": {
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 160.0
+    }
+  },
+  "REF_side_pad_1": {
+    "printed": false,
+    "installed": true,
+    "group": "stone",
+    "role": "firm padded contact for side screw",
+    "solids": 1,
+    "volume_mm3": 480.0,
+    "bounds_mm": [
+      2.0,
+      17.778,
+      30.927
+    ],
+    "file": "assembly_parts/REF_side_pad_1.step",
+    "print_rotation": {
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 160.0
+    }
+  },
+  "REF_side_pad_2": {
+    "printed": false,
+    "installed": true,
+    "group": "stone",
+    "role": "firm padded contact for side screw",
+    "solids": 1,
+    "volume_mm3": 480.0,
+    "bounds_mm": [
+      2.0,
+      17.778,
+      30.927
+    ],
+    "file": "assembly_parts/REF_side_pad_2.step",
+    "print_rotation": {
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 160.0
+    }
+  },
+  "REF_side_pad_3": {
+    "printed": false,
+    "installed": true,
+    "group": "stone",
+    "role": "firm padded contact for side screw",
+    "solids": 1,
+    "volume_mm3": 480.0,
+    "bounds_mm": [
+      2.0,
+      17.778,
+      30.927
+    ],
+    "file": "assembly_parts/REF_side_pad_3.step",
+    "print_rotation": {
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 160.0
+    }
+  },
+  "REF_side_pad_4": {
+    "printed": false,
+    "installed": true,
+    "group": "stone",
+    "role": "firm padded contact for side screw",
+    "solids": 1,
+    "volume_mm3": 480.0,
+    "bounds_mm": [
+      2.0,
+      17.778,
+      30.927
+    ],
+    "file": "assembly_parts/REF_side_pad_4.step",
+    "print_rotation": {
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 160.0
+    }
+  },
+  "REF_guide_rod_8x400": {
+    "printed": false,
+    "installed": true,
+    "group": "stone",
+    "role": "purchased ground smooth shaft",
+    "solids": 1,
+    "volume_mm3": 20106.193,
+    "bounds_mm": [
+      8.0,
+      378.613,
+      144.326
+    ],
+    "file": "assembly_parts/REF_guide_rod_8x400.step",
+    "bom_name": "ground_shaft_8x400"
+  },
+  "HW_bolt_M5x20_1": {
+    "file": "assembly_parts/HW_bolt_M5x20_1.step",
+    "printed": false,
+    "group": "fixed",
+    "role": "frame_mount_bolt",
+    "kind": "bolt",
+    "m": 5,
+    "length": 20,
+    "bom_name": "bolt_M5x20",
+    "position": [
+      -92,
+      110,
+      3.25
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_nut_M5_1": {
+    "file": "assembly_parts/HW_nut_M5_1.step",
+    "printed": false,
+    "group": "fixed",
+    "role": "frame_mount_nut",
+    "kind": "nut",
+    "m": 5,
+    "length": 0,
+    "bom_name": "nut_M5",
+    "position": [
+      -92,
+      110,
+      18
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_bolt_M5x20_2": {
+    "file": "assembly_parts/HW_bolt_M5x20_2.step",
+    "printed": false,
+    "group": "fixed",
+    "role": "frame_mount_bolt",
+    "kind": "bolt",
+    "m": 5,
+    "length": 20,
+    "bom_name": "bolt_M5x20",
+    "position": [
+      -92,
+      140,
+      3.25
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_nut_M5_2": {
+    "file": "assembly_parts/HW_nut_M5_2.step",
+    "printed": false,
+    "group": "fixed",
+    "role": "frame_mount_nut",
+    "kind": "nut",
+    "m": 5,
+    "length": 0,
+    "bom_name": "nut_M5",
+    "position": [
+      -92,
+      140,
+      18
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_bolt_M5x20_3": {
+    "file": "assembly_parts/HW_bolt_M5x20_3.step",
+    "printed": false,
+    "group": "fixed",
+    "role": "frame_mount_bolt",
+    "kind": "bolt",
+    "m": 5,
+    "length": 20,
+    "bom_name": "bolt_M5x20",
+    "position": [
+      92,
+      110,
+      3.25
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_nut_M5_3": {
+    "file": "assembly_parts/HW_nut_M5_3.step",
+    "printed": false,
+    "group": "fixed",
+    "role": "frame_mount_nut",
+    "kind": "nut",
+    "m": 5,
+    "length": 0,
+    "bom_name": "nut_M5",
+    "position": [
+      92,
+      110,
+      18
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_bolt_M5x20_4": {
+    "file": "assembly_parts/HW_bolt_M5x20_4.step",
+    "printed": false,
+    "group": "fixed",
+    "role": "frame_mount_bolt",
+    "kind": "bolt",
+    "m": 5,
+    "length": 20,
+    "bom_name": "bolt_M5x20",
+    "position": [
+      92,
+      140,
+      3.25
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_nut_M5_4": {
+    "file": "assembly_parts/HW_nut_M5_4.step",
+    "printed": false,
+    "group": "fixed",
+    "role": "frame_mount_nut",
+    "kind": "nut",
+    "m": 5,
+    "length": 0,
+    "bom_name": "nut_M5",
+    "position": [
+      92,
+      140,
+      18
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_threaded_rod_M6x160_cut_from_stock_1": {
+    "file": "assembly_parts/HW_threaded_rod_M6x160_cut_from_stock_1.step",
+    "printed": false,
+    "group": "fixed",
+    "role": "fine_height_lead_screw",
+    "kind": "shaft",
+    "m": 6,
+    "length": 160,
+    "bom_name": "threaded_rod_M6x160_cut_from_stock",
+    "position": [
+      50.0,
+      130.0,
+      155
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_nut_M6_1": {
+    "file": "assembly_parts/HW_nut_M6_1.step",
+    "printed": false,
+    "group": "fixed",
+    "role": "lead_screw_lower_nut",
+    "kind": "nut",
+    "m": 6,
+    "length": 0,
+    "bom_name": "nut_M6",
+    "position": [
+      50.0,
+      130.0,
+      284
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_nut_M6_2": {
+    "file": "assembly_parts/HW_nut_M6_2.step",
+    "printed": false,
+    "group": "fixed",
+    "role": "lead_screw_lower_jam_nut",
+    "kind": "nut",
+    "m": 6,
+    "length": 0,
+    "bom_name": "nut_M6",
+    "position": [
+      50.0,
+      130.0,
+      279.2
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_washer_M6_1": {
+    "file": "assembly_parts/HW_washer_M6_1.step",
+    "printed": false,
+    "group": "fixed",
+    "role": "lead_screw_lower_washer",
+    "kind": "washer",
+    "m": 6,
+    "length": 0,
+    "bom_name": "washer_M6",
+    "position": [
+      50.0,
+      130.0,
+      288.8
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_washer_M6_2": {
+    "file": "assembly_parts/HW_washer_M6_2.step",
+    "printed": false,
+    "group": "fixed",
+    "role": "lead_screw_upper_washer",
+    "kind": "washer",
+    "m": 6,
+    "length": 0,
+    "bom_name": "washer_M6",
+    "position": [
+      50.0,
+      130.0,
+      300
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_nut_M6_3": {
+    "file": "assembly_parts/HW_nut_M6_3.step",
+    "printed": false,
+    "group": "fixed",
+    "role": "lead_screw_knob_nut",
+    "kind": "nut",
+    "m": 6,
+    "length": 0,
+    "bom_name": "nut_M6",
+    "position": [
+      50.0,
+      130.0,
+      301.2
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_nut_M6_4": {
+    "file": "assembly_parts/HW_nut_M6_4.step",
+    "printed": false,
+    "group": "fixed",
+    "role": "lead_screw_knob_jam_nut",
+    "kind": "nut",
+    "m": 6,
+    "length": 0,
+    "bom_name": "nut_M6",
+    "position": [
+      50.0,
+      130.0,
+      306
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_bolt_M5x20_5": {
+    "file": "assembly_parts/HW_bolt_M5x20_5.step",
+    "printed": false,
+    "group": "fixed",
+    "role": "dock_mount_bolt",
+    "kind": "bolt",
+    "m": 5,
+    "length": 20,
+    "bom_name": "bolt_M5x20",
+    "position": [
+      -44,
+      40,
+      3.25
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_nut_M5_5": {
+    "file": "assembly_parts/HW_nut_M5_5.step",
+    "printed": false,
+    "group": "fixed",
+    "role": "dock_mount_nut",
+    "kind": "nut",
+    "m": 5,
+    "length": 0,
+    "bom_name": "nut_M5",
+    "position": [
+      -44,
+      40,
+      18
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_bolt_M5x20_6": {
+    "file": "assembly_parts/HW_bolt_M5x20_6.step",
+    "printed": false,
+    "group": "fixed",
+    "role": "dock_mount_bolt",
+    "kind": "bolt",
+    "m": 5,
+    "length": 20,
+    "bom_name": "bolt_M5x20",
+    "position": [
+      -44,
+      60,
+      3.25
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_nut_M5_6": {
+    "file": "assembly_parts/HW_nut_M5_6.step",
+    "printed": false,
+    "group": "fixed",
+    "role": "dock_mount_nut",
+    "kind": "nut",
+    "m": 5,
+    "length": 0,
+    "bom_name": "nut_M5",
+    "position": [
+      -44,
+      60,
+      18
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_bolt_M5x20_7": {
+    "file": "assembly_parts/HW_bolt_M5x20_7.step",
+    "printed": false,
+    "group": "fixed",
+    "role": "dock_mount_bolt",
+    "kind": "bolt",
+    "m": 5,
+    "length": 20,
+    "bom_name": "bolt_M5x20",
+    "position": [
+      44,
+      40,
+      3.25
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_nut_M5_7": {
+    "file": "assembly_parts/HW_nut_M5_7.step",
+    "printed": false,
+    "group": "fixed",
+    "role": "dock_mount_nut",
+    "kind": "nut",
+    "m": 5,
+    "length": 0,
+    "bom_name": "nut_M5",
+    "position": [
+      44,
+      40,
+      18
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_bolt_M5x20_8": {
+    "file": "assembly_parts/HW_bolt_M5x20_8.step",
+    "printed": false,
+    "group": "fixed",
+    "role": "dock_mount_bolt",
+    "kind": "bolt",
+    "m": 5,
+    "length": 20,
+    "bom_name": "bolt_M5x20",
+    "position": [
+      44,
+      60,
+      3.25
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_nut_M5_8": {
+    "file": "assembly_parts/HW_nut_M5_8.step",
+    "printed": false,
+    "group": "fixed",
+    "role": "dock_mount_nut",
+    "kind": "nut",
+    "m": 5,
+    "length": 0,
+    "bom_name": "nut_M5",
+    "position": [
+      44,
+      60,
+      18
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_ground_dowel_6x30_1": {
+    "file": "assembly_parts/HW_ground_dowel_6x30_1.step",
+    "printed": false,
+    "group": "fixed",
+    "role": "registration_dowel",
+    "kind": "dowel",
+    "m": 6,
+    "length": 30,
+    "bom_name": "ground_dowel_6x30",
+    "position": [
+      -28,
+      14,
+      150.0
+    ],
+    "direction": "y",
+    "local_stone": false
+  },
+  "HW_set_screw_M4x16_1": {
+    "file": "assembly_parts/HW_set_screw_M4x16_1.step",
+    "printed": false,
+    "group": "fixed",
+    "role": "registration_pin_retaining_screw",
+    "kind": "set_screw",
+    "m": 4,
+    "length": 16,
+    "bom_name": "set_screw_M4x16",
+    "position": [
+      -28,
+      38,
+      169.0
+    ],
+    "direction": "-z",
+    "local_stone": false
+  },
+  "HW_nut_M4_1": {
+    "file": "assembly_parts/HW_nut_M4_1.step",
+    "printed": false,
+    "group": "fixed",
+    "role": "registration_pin_captive_nut",
+    "kind": "nut",
+    "m": 4,
+    "length": 0,
+    "bom_name": "nut_M4",
+    "position": [
+      -28,
+      38,
+      163.0
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_ground_dowel_6x30_2": {
+    "file": "assembly_parts/HW_ground_dowel_6x30_2.step",
+    "printed": false,
+    "group": "fixed",
+    "role": "registration_dowel",
+    "kind": "dowel",
+    "m": 6,
+    "length": 30,
+    "bom_name": "ground_dowel_6x30",
+    "position": [
+      28,
+      14,
+      150.0
+    ],
+    "direction": "y",
+    "local_stone": false
+  },
+  "HW_set_screw_M4x16_2": {
+    "file": "assembly_parts/HW_set_screw_M4x16_2.step",
+    "printed": false,
+    "group": "fixed",
+    "role": "registration_pin_retaining_screw",
+    "kind": "set_screw",
+    "m": 4,
+    "length": 16,
+    "bom_name": "set_screw_M4x16",
+    "position": [
+      28,
+      38,
+      169.0
+    ],
+    "direction": "-z",
+    "local_stone": false
+  },
+  "HW_nut_M4_2": {
+    "file": "assembly_parts/HW_nut_M4_2.step",
+    "printed": false,
+    "group": "fixed",
+    "role": "registration_pin_captive_nut",
+    "kind": "nut",
+    "m": 4,
+    "length": 0,
+    "bom_name": "nut_M4",
+    "position": [
+      28,
+      38,
+      163.0
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_bolt_M5x40_1": {
+    "file": "assembly_parts/HW_bolt_M5x40_1.step",
+    "printed": false,
+    "group": "draw_screws",
+    "role": "cartridge_draw_bolt",
+    "kind": "bolt",
+    "m": 5,
+    "length": 40,
+    "bom_name": "bolt_M5x40",
+    "position": [
+      -43,
+      14.8,
+      150.0
+    ],
+    "direction": "y",
+    "local_stone": false
+  },
+  "HW_washer_M5_1": {
+    "file": "assembly_parts/HW_washer_M5_1.step",
+    "printed": false,
+    "group": "draw_screws",
+    "role": "cartridge_draw_washer",
+    "kind": "washer",
+    "m": 5,
+    "length": 0,
+    "bom_name": "washer_M5",
+    "position": [
+      -43,
+      14.8,
+      150.0
+    ],
+    "direction": "y",
+    "local_stone": false
+  },
+  "HW_nut_M5_9": {
+    "file": "assembly_parts/HW_nut_M5_9.step",
+    "printed": false,
+    "group": "fixed",
+    "role": "cartridge_draw_nut",
+    "kind": "nut",
+    "m": 5,
+    "length": 0,
+    "bom_name": "nut_M5",
+    "position": [
+      -43,
+      46,
+      150.0
+    ],
+    "direction": "y",
+    "local_stone": false
+  },
+  "HW_bolt_M5x40_2": {
+    "file": "assembly_parts/HW_bolt_M5x40_2.step",
+    "printed": false,
+    "group": "draw_screws",
+    "role": "cartridge_draw_bolt",
+    "kind": "bolt",
+    "m": 5,
+    "length": 40,
+    "bom_name": "bolt_M5x40",
+    "position": [
+      43,
+      14.8,
+      150.0
+    ],
+    "direction": "y",
+    "local_stone": false
+  },
+  "HW_washer_M5_2": {
+    "file": "assembly_parts/HW_washer_M5_2.step",
+    "printed": false,
+    "group": "draw_screws",
+    "role": "cartridge_draw_washer",
+    "kind": "washer",
+    "m": 5,
+    "length": 0,
+    "bom_name": "washer_M5",
+    "position": [
+      43,
+      14.8,
+      150.0
+    ],
+    "direction": "y",
+    "local_stone": false
+  },
+  "HW_nut_M5_10": {
+    "file": "assembly_parts/HW_nut_M5_10.step",
+    "printed": false,
+    "group": "fixed",
+    "role": "cartridge_draw_nut",
+    "kind": "nut",
+    "m": 5,
+    "length": 0,
+    "bom_name": "nut_M5",
+    "position": [
+      43,
+      46,
+      150.0
+    ],
+    "direction": "y",
+    "local_stone": false
+  },
+  "HW_bolt_M6x30_1": {
+    "file": "assembly_parts/HW_bolt_M6x30_1.step",
+    "printed": false,
+    "group": "cartridge",
+    "role": "knife_clamp_bolt",
+    "kind": "bolt",
+    "m": 6,
+    "length": 30,
+    "bom_name": "bolt_M6x30",
+    "position": [
+      -52,
+      -16,
+      159.7
+    ],
+    "direction": "-z",
+    "local_stone": false
+  },
+  "HW_washer_M6_3": {
+    "file": "assembly_parts/HW_washer_M6_3.step",
+    "printed": false,
+    "group": "cartridge",
+    "role": "knife_clamp_top_washer",
+    "kind": "washer",
+    "m": 6,
+    "length": 0,
+    "bom_name": "washer_M6",
+    "position": [
+      -52,
+      -16,
+      158.5
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_washer_M6_4": {
+    "file": "assembly_parts/HW_washer_M6_4.step",
+    "printed": false,
+    "group": "cartridge",
+    "role": "knife_clamp_lower_washer",
+    "kind": "washer",
+    "m": 6,
+    "length": 0,
+    "bom_name": "washer_M6",
+    "position": [
+      -52,
+      -16,
+      138.8
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_nut_M6_5": {
+    "file": "assembly_parts/HW_nut_M6_5.step",
+    "printed": false,
+    "group": "cartridge",
+    "role": "knife_clamp_nut",
+    "kind": "nut",
+    "m": 6,
+    "length": 0,
+    "bom_name": "nut_M6",
+    "position": [
+      -52,
+      -16,
+      134.0
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_bolt_M5x25_1": {
+    "file": "assembly_parts/HW_bolt_M5x25_1.step",
+    "printed": false,
+    "group": "cartridge",
+    "role": "knife_jack_screw",
+    "kind": "bolt",
+    "m": 5,
+    "length": 25,
+    "bom_name": "bolt_M5x25",
+    "position": [
+      -52,
+      0,
+      168.2
+    ],
+    "direction": "-z",
+    "local_stone": false
+  },
+  "HW_nut_M5_11": {
+    "file": "assembly_parts/HW_nut_M5_11.step",
+    "printed": false,
+    "group": "cartridge",
+    "role": "knife_jack_captive_nut",
+    "kind": "nut",
+    "m": 5,
+    "length": 0,
+    "bom_name": "nut_M5",
+    "position": [
+      -52,
+      0,
+      151.5
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_washer_M5_3": {
+    "file": "assembly_parts/HW_washer_M5_3.step",
+    "printed": false,
+    "group": "cartridge",
+    "role": "knife_jack_lock_washer",
+    "kind": "washer",
+    "m": 5,
+    "length": 0,
+    "bom_name": "washer_M5",
+    "position": [
+      -52,
+      0,
+      158.5
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_nut_M5_12": {
+    "file": "assembly_parts/HW_nut_M5_12.step",
+    "printed": false,
+    "group": "cartridge",
+    "role": "knife_jack_lock_nut",
+    "kind": "nut",
+    "m": 5,
+    "length": 0,
+    "bom_name": "nut_M5",
+    "position": [
+      -52,
+      0,
+      159.7
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_bolt_M6x30_2": {
+    "file": "assembly_parts/HW_bolt_M6x30_2.step",
+    "printed": false,
+    "group": "cartridge",
+    "role": "knife_clamp_bolt",
+    "kind": "bolt",
+    "m": 6,
+    "length": 30,
+    "bom_name": "bolt_M6x30",
+    "position": [
+      52,
+      -16,
+      159.7
+    ],
+    "direction": "-z",
+    "local_stone": false
+  },
+  "HW_washer_M6_5": {
+    "file": "assembly_parts/HW_washer_M6_5.step",
+    "printed": false,
+    "group": "cartridge",
+    "role": "knife_clamp_top_washer",
+    "kind": "washer",
+    "m": 6,
+    "length": 0,
+    "bom_name": "washer_M6",
+    "position": [
+      52,
+      -16,
+      158.5
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_washer_M6_6": {
+    "file": "assembly_parts/HW_washer_M6_6.step",
+    "printed": false,
+    "group": "cartridge",
+    "role": "knife_clamp_lower_washer",
+    "kind": "washer",
+    "m": 6,
+    "length": 0,
+    "bom_name": "washer_M6",
+    "position": [
+      52,
+      -16,
+      138.8
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_nut_M6_6": {
+    "file": "assembly_parts/HW_nut_M6_6.step",
+    "printed": false,
+    "group": "cartridge",
+    "role": "knife_clamp_nut",
+    "kind": "nut",
+    "m": 6,
+    "length": 0,
+    "bom_name": "nut_M6",
+    "position": [
+      52,
+      -16,
+      134.0
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_bolt_M5x25_2": {
+    "file": "assembly_parts/HW_bolt_M5x25_2.step",
+    "printed": false,
+    "group": "cartridge",
+    "role": "knife_jack_screw",
+    "kind": "bolt",
+    "m": 5,
+    "length": 25,
+    "bom_name": "bolt_M5x25",
+    "position": [
+      52,
+      0,
+      168.2
+    ],
+    "direction": "-z",
+    "local_stone": false
+  },
+  "HW_nut_M5_13": {
+    "file": "assembly_parts/HW_nut_M5_13.step",
+    "printed": false,
+    "group": "cartridge",
+    "role": "knife_jack_captive_nut",
+    "kind": "nut",
+    "m": 5,
+    "length": 0,
+    "bom_name": "nut_M5",
+    "position": [
+      52,
+      0,
+      151.5
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_washer_M5_4": {
+    "file": "assembly_parts/HW_washer_M5_4.step",
+    "printed": false,
+    "group": "cartridge",
+    "role": "knife_jack_lock_washer",
+    "kind": "washer",
+    "m": 5,
+    "length": 0,
+    "bom_name": "washer_M5",
+    "position": [
+      52,
+      0,
+      158.5
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_nut_M5_14": {
+    "file": "assembly_parts/HW_nut_M5_14.step",
+    "printed": false,
+    "group": "cartridge",
+    "role": "knife_jack_lock_nut",
+    "kind": "nut",
+    "m": 5,
+    "length": 0,
+    "bom_name": "nut_M5",
+    "position": [
+      52,
+      0,
+      159.7
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_bolt_M6x45_1": {
+    "file": "assembly_parts/HW_bolt_M6x45_1.step",
+    "printed": false,
+    "group": "height",
+    "role": "height locking bolt",
+    "kind": "bolt",
+    "m": 6,
+    "length": 45,
+    "bom_name": "bolt_M6x45",
+    "position": [
+      -80,
+      106.8,
+      236.69876181419454
+    ],
+    "direction": "y",
+    "local_stone": false
+  },
+  "HW_washer_M6_7": {
+    "file": "assembly_parts/HW_washer_M6_7.step",
+    "printed": false,
+    "group": "height",
+    "role": "front height washer",
+    "kind": "washer",
+    "m": 6,
+    "length": 0,
+    "bom_name": "washer_M6",
+    "position": [
+      -80,
+      106.8,
+      236.69876181419454
+    ],
+    "direction": "y",
+    "local_stone": false
+  },
+  "HW_washer_M6_8": {
+    "file": "assembly_parts/HW_washer_M6_8.step",
+    "printed": false,
+    "group": "height",
+    "role": "rear height washer",
+    "kind": "washer",
+    "m": 6,
+    "length": 0,
+    "bom_name": "washer_M6",
+    "position": [
+      -80,
+      142,
+      236.69876181419454
+    ],
+    "direction": "y",
+    "local_stone": false
+  },
+  "HW_nut_M6_7": {
+    "file": "assembly_parts/HW_nut_M6_7.step",
+    "printed": false,
+    "group": "height",
+    "role": "height locking nut",
+    "kind": "nut",
+    "m": 6,
+    "length": 0,
+    "bom_name": "nut_M6",
+    "position": [
+      -80,
+      143.2,
+      236.69876181419454
+    ],
+    "direction": "y",
+    "local_stone": false
+  },
+  "HW_bolt_M6x45_2": {
+    "file": "assembly_parts/HW_bolt_M6x45_2.step",
+    "printed": false,
+    "group": "height",
+    "role": "height locking bolt",
+    "kind": "bolt",
+    "m": 6,
+    "length": 45,
+    "bom_name": "bolt_M6x45",
+    "position": [
+      80,
+      106.8,
+      236.69876181419454
+    ],
+    "direction": "y",
+    "local_stone": false
+  },
+  "HW_washer_M6_9": {
+    "file": "assembly_parts/HW_washer_M6_9.step",
+    "printed": false,
+    "group": "height",
+    "role": "front height washer",
+    "kind": "washer",
+    "m": 6,
+    "length": 0,
+    "bom_name": "washer_M6",
+    "position": [
+      80,
+      106.8,
+      236.69876181419454
+    ],
+    "direction": "y",
+    "local_stone": false
+  },
+  "HW_washer_M6_10": {
+    "file": "assembly_parts/HW_washer_M6_10.step",
+    "printed": false,
+    "group": "height",
+    "role": "rear height washer",
+    "kind": "washer",
+    "m": 6,
+    "length": 0,
+    "bom_name": "washer_M6",
+    "position": [
+      80,
+      142,
+      236.69876181419454
+    ],
+    "direction": "y",
+    "local_stone": false
+  },
+  "HW_nut_M6_8": {
+    "file": "assembly_parts/HW_nut_M6_8.step",
+    "printed": false,
+    "group": "height",
+    "role": "height locking nut",
+    "kind": "nut",
+    "m": 6,
+    "length": 0,
+    "bom_name": "nut_M6",
+    "position": [
+      80,
+      143.2,
+      236.69876181419454
+    ],
+    "direction": "y",
+    "local_stone": false
+  },
+  "HW_nut_M6_9": {
+    "file": "assembly_parts/HW_nut_M6_9.step",
+    "printed": false,
+    "group": "height",
+    "role": "captive fine-height nut",
+    "kind": "nut",
+    "m": 6,
+    "length": 0,
+    "bom_name": "nut_M6",
+    "position": [
+      50,
+      130,
+      222.89876181419453
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_bolt_M8x25_1": {
+    "file": "assembly_parts/HW_bolt_M8x25_1.step",
+    "printed": false,
+    "group": "height",
+    "role": "short yaw pivot bolt",
+    "kind": "bolt",
+    "m": 8,
+    "length": 25,
+    "bom_name": "bolt_M8x25",
+    "position": [
+      0,
+      100,
+      219.49876181419455
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_washer_M8_1": {
+    "file": "assembly_parts/HW_washer_M8_1.step",
+    "printed": false,
+    "group": "height",
+    "role": "lower yaw thrust washer",
+    "kind": "washer",
+    "m": 8,
+    "length": 0,
+    "bom_name": "washer_M8",
+    "position": [
+      0,
+      100,
+      219.49876181419455
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_washer_M8_2": {
+    "file": "assembly_parts/HW_washer_M8_2.step",
+    "printed": false,
+    "group": "yaw",
+    "role": "upper yaw thrust washer",
+    "kind": "washer",
+    "m": 8,
+    "length": 0,
+    "bom_name": "washer_M8",
+    "position": [
+      0,
+      100,
+      234.69876181419454
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_nut_M8_1": {
+    "file": "assembly_parts/HW_nut_M8_1.step",
+    "printed": false,
+    "group": "yaw",
+    "role": "yaw prevailing-torque nut",
+    "kind": "nut",
+    "m": 8,
+    "length": 0,
+    "bom_name": "nut_M8",
+    "position": [
+      0,
+      100,
+      235.89876181419453
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_bolt_M4x25_1": {
+    "file": "assembly_parts/HW_bolt_M4x25_1.step",
+    "printed": false,
+    "group": "height",
+    "role": "positive yaw lock bolt",
+    "kind": "bolt",
+    "m": 4,
+    "length": 25,
+    "bom_name": "bolt_M4x25",
+    "position": [
+      0,
+      118,
+      219.49876181419455
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_washer_M4_1": {
+    "file": "assembly_parts/HW_washer_M4_1.step",
+    "printed": false,
+    "group": "height",
+    "role": "yaw lock lower washer",
+    "kind": "washer",
+    "m": 4,
+    "length": 0,
+    "bom_name": "washer_M4",
+    "position": [
+      0,
+      118,
+      219.49876181419455
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_washer_M4_2": {
+    "file": "assembly_parts/HW_washer_M4_2.step",
+    "printed": false,
+    "group": "yaw",
+    "role": "yaw lock upper washer",
+    "kind": "washer",
+    "m": 4,
+    "length": 0,
+    "bom_name": "washer_M4",
+    "position": [
+      0,
+      118,
+      234.69876181419454
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_nut_M4_3": {
+    "file": "assembly_parts/HW_nut_M4_3.step",
+    "printed": false,
+    "group": "yaw",
+    "role": "positive yaw lock nut",
+    "kind": "nut",
+    "m": 4,
+    "length": 0,
+    "bom_name": "nut_M4",
+    "position": [
+      0,
+      118,
+      235.89876181419453
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_bolt_M5x50_1": {
+    "file": "assembly_parts/HW_bolt_M5x50_1.step",
+    "printed": false,
+    "group": "yaw",
+    "role": "pitch cheek bolt",
+    "kind": "bolt",
+    "m": 5,
+    "length": 50,
+    "bom_name": "bolt_M5x50",
+    "position": [
+      -23,
+      90,
+      273.89876181419453
+    ],
+    "direction": "-z",
+    "local_stone": false
+  },
+  "HW_washer_M5_5": {
+    "file": "assembly_parts/HW_washer_M5_5.step",
+    "printed": false,
+    "group": "yaw",
+    "role": "cheek head washer",
+    "kind": "washer",
+    "m": 5,
+    "length": 0,
+    "bom_name": "washer_M5",
+    "position": [
+      -23,
+      90,
+      273.89876181419453
+    ],
+    "direction": "-z",
+    "local_stone": false
+  },
+  "HW_nut_M5_15": {
+    "file": "assembly_parts/HW_nut_M5_15.step",
+    "printed": false,
+    "group": "yaw",
+    "role": "cheek retaining nut",
+    "kind": "nut",
+    "m": 5,
+    "length": 0,
+    "bom_name": "nut_M5",
+    "position": [
+      -23,
+      90,
+      224.69876181419454
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_bolt_M5x50_2": {
+    "file": "assembly_parts/HW_bolt_M5x50_2.step",
+    "printed": false,
+    "group": "yaw",
+    "role": "pitch cheek bolt",
+    "kind": "bolt",
+    "m": 5,
+    "length": 50,
+    "bom_name": "bolt_M5x50",
+    "position": [
+      -23,
+      110,
+      273.89876181419453
+    ],
+    "direction": "-z",
+    "local_stone": false
+  },
+  "HW_washer_M5_6": {
+    "file": "assembly_parts/HW_washer_M5_6.step",
+    "printed": false,
+    "group": "yaw",
+    "role": "cheek head washer",
+    "kind": "washer",
+    "m": 5,
+    "length": 0,
+    "bom_name": "washer_M5",
+    "position": [
+      -23,
+      110,
+      273.89876181419453
+    ],
+    "direction": "-z",
+    "local_stone": false
+  },
+  "HW_nut_M5_16": {
+    "file": "assembly_parts/HW_nut_M5_16.step",
+    "printed": false,
+    "group": "yaw",
+    "role": "cheek retaining nut",
+    "kind": "nut",
+    "m": 5,
+    "length": 0,
+    "bom_name": "nut_M5",
+    "position": [
+      -23,
+      110,
+      224.69876181419454
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_bolt_M5x50_3": {
+    "file": "assembly_parts/HW_bolt_M5x50_3.step",
+    "printed": false,
+    "group": "yaw",
+    "role": "pitch cheek bolt",
+    "kind": "bolt",
+    "m": 5,
+    "length": 50,
+    "bom_name": "bolt_M5x50",
+    "position": [
+      23,
+      90,
+      273.89876181419453
+    ],
+    "direction": "-z",
+    "local_stone": false
+  },
+  "HW_washer_M5_7": {
+    "file": "assembly_parts/HW_washer_M5_7.step",
+    "printed": false,
+    "group": "yaw",
+    "role": "cheek head washer",
+    "kind": "washer",
+    "m": 5,
+    "length": 0,
+    "bom_name": "washer_M5",
+    "position": [
+      23,
+      90,
+      273.89876181419453
+    ],
+    "direction": "-z",
+    "local_stone": false
+  },
+  "HW_nut_M5_17": {
+    "file": "assembly_parts/HW_nut_M5_17.step",
+    "printed": false,
+    "group": "yaw",
+    "role": "cheek retaining nut",
+    "kind": "nut",
+    "m": 5,
+    "length": 0,
+    "bom_name": "nut_M5",
+    "position": [
+      23,
+      90,
+      224.69876181419454
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_bolt_M5x50_4": {
+    "file": "assembly_parts/HW_bolt_M5x50_4.step",
+    "printed": false,
+    "group": "yaw",
+    "role": "pitch cheek bolt",
+    "kind": "bolt",
+    "m": 5,
+    "length": 50,
+    "bom_name": "bolt_M5x50",
+    "position": [
+      23,
+      110,
+      273.89876181419453
+    ],
+    "direction": "-z",
+    "local_stone": false
+  },
+  "HW_washer_M5_8": {
+    "file": "assembly_parts/HW_washer_M5_8.step",
+    "printed": false,
+    "group": "yaw",
+    "role": "cheek head washer",
+    "kind": "washer",
+    "m": 5,
+    "length": 0,
+    "bom_name": "washer_M5",
+    "position": [
+      23,
+      110,
+      273.89876181419453
+    ],
+    "direction": "-z",
+    "local_stone": false
+  },
+  "HW_nut_M5_18": {
+    "file": "assembly_parts/HW_nut_M5_18.step",
+    "printed": false,
+    "group": "yaw",
+    "role": "cheek retaining nut",
+    "kind": "nut",
+    "m": 5,
+    "length": 0,
+    "bom_name": "nut_M5",
+    "position": [
+      23,
+      110,
+      224.69876181419454
+    ],
+    "direction": "z",
+    "local_stone": false
+  },
+  "HW_bolt_M4x25_2": {
+    "file": "assembly_parts/HW_bolt_M4x25_2.step",
+    "printed": false,
+    "group": "pitch",
+    "role": "replaceable sleeve clamp",
+    "kind": "bolt",
+    "m": 4,
+    "length": 25,
+    "bom_name": "bolt_M4x25",
+    "position": [
+      -12,
+      0,
+      10
+    ],
+    "direction": "x",
+    "local_stone": false
+  },
+  "HW_nut_M4_4": {
+    "file": "assembly_parts/HW_nut_M4_4.step",
+    "printed": false,
+    "group": "pitch",
+    "role": "replaceable sleeve clamp",
+    "kind": "nut",
+    "m": 4,
+    "length": 0,
+    "bom_name": "nut_M4",
+    "position": [
+      8.4,
+      0,
+      10
+    ],
+    "direction": "x",
+    "local_stone": false
+  },
+  "HW_bolt_M4x20_1": {
+    "file": "assembly_parts/HW_bolt_M4x20_1.step",
+    "printed": false,
+    "group": "rod_stops",
+    "role": "split stop screw",
+    "kind": "bolt",
+    "m": 4,
+    "length": 20,
+    "bom_name": "bolt_M4x20",
+    "position": [
+      -10,
+      145.92491162861796,
+      52.0
+    ],
+    "direction": "x",
+    "local_stone": true
+  },
+  "HW_nut_M4_5": {
+    "file": "assembly_parts/HW_nut_M4_5.step",
+    "printed": false,
+    "group": "rod_stops",
+    "role": "captive stop nut",
+    "kind": "nut",
+    "m": 4,
+    "length": 0,
+    "bom_name": "nut_M4",
+    "position": [
+      6.5,
+      145.92491162861796,
+      52.0
+    ],
+    "direction": "x",
+    "local_stone": true
+  },
+  "HW_bolt_M4x20_2": {
+    "file": "assembly_parts/HW_bolt_M4x20_2.step",
+    "printed": false,
+    "group": "rod_stops",
+    "role": "split stop screw",
+    "kind": "bolt",
+    "m": 4,
+    "length": 20,
+    "bom_name": "bolt_M4x20",
+    "position": [
+      -10,
+      247.92491162861796,
+      52.0
+    ],
+    "direction": "x",
+    "local_stone": true
+  },
+  "HW_nut_M4_6": {
+    "file": "assembly_parts/HW_nut_M4_6.step",
+    "printed": false,
+    "group": "rod_stops",
+    "role": "captive stop nut",
+    "kind": "nut",
+    "m": 4,
+    "length": 0,
+    "bom_name": "nut_M4",
+    "position": [
+      6.5,
+      247.92491162861796,
+      52.0
+    ],
+    "direction": "x",
+    "local_stone": true
+  },
+  "HW_bolt_M5x25_3": {
+    "file": "assembly_parts/HW_bolt_M5x25_3.step",
+    "printed": false,
+    "group": "stone",
+    "role": "split rod clamp",
+    "kind": "bolt",
+    "m": 5,
+    "length": 25,
+    "bom_name": "bolt_M5x25",
+    "position": [
+      -12,
+      -70.0,
+      51.0
+    ],
+    "direction": "x",
+    "local_stone": true
+  },
+  "HW_nut_M5_19": {
+    "file": "assembly_parts/HW_nut_M5_19.step",
+    "printed": false,
+    "group": "stone",
+    "role": "captive rod-clamp nut",
+    "kind": "nut",
+    "m": 5,
+    "length": 0,
+    "bom_name": "nut_M5",
+    "position": [
+      8,
+      -70.0,
+      51.0
+    ],
+    "direction": "x",
+    "local_stone": true
+  },
+  "HW_bolt_M5x25_4": {
+    "file": "assembly_parts/HW_bolt_M5x25_4.step",
+    "printed": false,
+    "group": "stone",
+    "role": "split rod clamp",
+    "kind": "bolt",
+    "m": 5,
+    "length": 25,
+    "bom_name": "bolt_M5x25",
+    "position": [
+      -12,
+      70.0,
+      51.0
+    ],
+    "direction": "x",
+    "local_stone": true
+  },
+  "HW_nut_M5_20": {
+    "file": "assembly_parts/HW_nut_M5_20.step",
+    "printed": false,
+    "group": "stone",
+    "role": "captive rod-clamp nut",
+    "kind": "nut",
+    "m": 5,
+    "length": 0,
+    "bom_name": "nut_M5",
+    "position": [
+      8,
+      70.0,
+      51.0
+    ],
+    "direction": "x",
+    "local_stone": true
+  },
+  "HW_nylon_tip_screw_M4x8_1": {
+    "file": "assembly_parts/HW_nylon_tip_screw_M4x8_1.step",
+    "printed": false,
+    "group": "stone",
+    "role": "padded side adjuster",
+    "kind": "bolt",
+    "m": 4,
+    "length": 8,
+    "bom_name": "nylon_tip_screw_M4x8",
+    "position": [
+      -40.0,
+      -60.0,
+      15.0
+    ],
+    "direction": "x",
+    "local_stone": true
+  },
+  "HW_nut_M4_7": {
+    "file": "assembly_parts/HW_nut_M4_7.step",
+    "printed": false,
+    "group": "stone",
+    "role": "captive side-adjuster nut",
+    "kind": "nut",
+    "m": 4,
+    "length": 0,
+    "bom_name": "nut_M4",
+    "position": [
+      -38.2,
+      -60.0,
+      15.0
+    ],
+    "direction": "x",
+    "local_stone": true
+  },
+  "HW_nylon_tip_screw_M4x8_2": {
+    "file": "assembly_parts/HW_nylon_tip_screw_M4x8_2.step",
+    "printed": false,
+    "group": "stone",
+    "role": "padded side adjuster",
+    "kind": "bolt",
+    "m": 4,
+    "length": 8,
+    "bom_name": "nylon_tip_screw_M4x8",
+    "position": [
+      -40.0,
+      60.0,
+      15.0
+    ],
+    "direction": "x",
+    "local_stone": true
+  },
+  "HW_nut_M4_8": {
+    "file": "assembly_parts/HW_nut_M4_8.step",
+    "printed": false,
+    "group": "stone",
+    "role": "captive side-adjuster nut",
+    "kind": "nut",
+    "m": 4,
+    "length": 0,
+    "bom_name": "nut_M4",
+    "position": [
+      -38.2,
+      60.0,
+      15.0
+    ],
+    "direction": "x",
+    "local_stone": true
+  },
+  "HW_nylon_tip_screw_M4x8_3": {
+    "file": "assembly_parts/HW_nylon_tip_screw_M4x8_3.step",
+    "printed": false,
+    "group": "stone",
+    "role": "padded side adjuster",
+    "kind": "bolt",
+    "m": 4,
+    "length": 8,
+    "bom_name": "nylon_tip_screw_M4x8",
+    "position": [
+      40.0,
+      -60.0,
+      15.0
+    ],
+    "direction": "-x",
+    "local_stone": true
+  },
+  "HW_nut_M4_9": {
+    "file": "assembly_parts/HW_nut_M4_9.step",
+    "printed": false,
+    "group": "stone",
+    "role": "captive side-adjuster nut",
+    "kind": "nut",
+    "m": 4,
+    "length": 0,
+    "bom_name": "nut_M4",
+    "position": [
+      38.2,
+      -60.0,
+      15.0
+    ],
+    "direction": "-x",
+    "local_stone": true
+  },
+  "HW_nylon_tip_screw_M4x8_4": {
+    "file": "assembly_parts/HW_nylon_tip_screw_M4x8_4.step",
+    "printed": false,
+    "group": "stone",
+    "role": "padded side adjuster",
+    "kind": "bolt",
+    "m": 4,
+    "length": 8,
+    "bom_name": "nylon_tip_screw_M4x8",
+    "position": [
+      40.0,
+      60.0,
+      15.0
+    ],
+    "direction": "-x",
+    "local_stone": true
+  },
+  "HW_nut_M4_10": {
+    "file": "assembly_parts/HW_nut_M4_10.step",
+    "printed": false,
+    "group": "stone",
+    "role": "captive side-adjuster nut",
+    "kind": "nut",
+    "m": 4,
+    "length": 0,
+    "bom_name": "nut_M4",
+    "position": [
+      38.2,
+      60.0,
+      15.0
+    ],
+    "direction": "-x",
+    "local_stone": true
+  },
+  "HW_bolt_M4x16_1": {
+    "file": "assembly_parts/HW_bolt_M4x16_1.step",
+    "printed": false,
+    "group": "stone",
+    "role": "removable end-gate screw",
+    "kind": "bolt",
+    "m": 4,
+    "length": 16,
+    "bom_name": "bolt_M4x16",
+    "position": [
+      -36.0,
+      98.0,
+      15.0
+    ],
+    "direction": "-y",
+    "local_stone": true
+  },
+  "HW_nut_M4_11": {
+    "file": "assembly_parts/HW_nut_M4_11.step",
+    "printed": false,
+    "group": "stone",
+    "role": "captive gate nut",
+    "kind": "nut",
+    "m": 4,
+    "length": 0,
+    "bom_name": "nut_M4",
+    "position": [
+      -36.0,
+      86.0,
+      15.0
+    ],
+    "direction": "y",
+    "local_stone": true
+  },
+  "HW_bolt_M4x16_2": {
+    "file": "assembly_parts/HW_bolt_M4x16_2.step",
+    "printed": false,
+    "group": "stone",
+    "role": "removable end-gate screw",
+    "kind": "bolt",
+    "m": 4,
+    "length": 16,
+    "bom_name": "bolt_M4x16",
+    "position": [
+      36.0,
+      98.0,
+      15.0
+    ],
+    "direction": "-y",
+    "local_stone": true
+  },
+  "HW_nut_M4_12": {
+    "file": "assembly_parts/HW_nut_M4_12.step",
+    "printed": false,
+    "group": "stone",
+    "role": "captive gate nut",
+    "kind": "nut",
+    "m": 4,
+    "length": 0,
+    "bom_name": "nut_M4",
+    "position": [
+      36.0,
+      86.0,
+      15.0
+    ],
+    "direction": "y",
+    "local_stone": true
+  }
+}

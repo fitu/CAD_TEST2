@@ -1,352 +1,778 @@
 {
-  "01_ballast_base": {
+  "01_ribbed_bench_base": {
     "printed": true,
+    "installed": true,
+    "group": "fixed",
+    "role": "bench-clamped ribbed base; no ballast and no freestanding rating",
     "solids": 1,
-    "volume_mm3": 1006641.4,
+    "volume_mm3": 306445.517,
     "bounds_mm": [
-      300.0,
-      310.0,
-      32.0
+      200.0,
+      240.0,
+      10.0
+    ],
+    "file": "parts/01_ribbed_bench_base.step",
+    "print_stl": "print/01_ribbed_bench_base.stl",
+    "print_file": "print/01_ribbed_bench_base.step",
+    "print_bounds_mm": [
+      200.0,
+      240.0,
+      10.005
     ]
   },
-  "03_pedestal_1": {
+  "02_open_portal_frame": {
     "printed": true,
+    "installed": true,
+    "group": "fixed",
+    "role": "braced guide frame with central rod window and profile-specific scale",
     "solids": 1,
-    "volume_mm3": 337941.3,
+    "volume_mm3": 379566.282,
     "bounds_mm": [
-      64.0,
-      20.0,
-      280.0
-    ]
-  },
-  "03_pedestal_2": {
-    "printed": true,
-    "solids": 1,
-    "volume_mm3": 337941.3,
-    "bounds_mm": [
-      64.0,
-      20.0,
-      280.0
-    ]
-  },
-  "04_rotor_lower_jaw": {
-    "printed": true,
-    "solids": 1,
-    "volume_mm3": 56203.9,
-    "bounds_mm": [
-      96.0,
-      131.0,
-      26.0
-    ]
-  },
-  "05_upper_jaw": {
-    "printed": true,
-    "solids": 1,
-    "volume_mm3": 18527.2,
-    "bounds_mm": [
-      96.0,
-      49.0,
-      14.5
-    ]
-  },
-  "16_blade_shim_3mm": {
-    "printed": true,
-    "solids": 1,
-    "volume_mm3": 9360.0,
-    "bounds_mm": [
-      90.0,
-      16.0,
-      6.5
-    ]
-  },
-  "06_half_turn_disc": {
-    "printed": true,
-    "solids": 1,
-    "volume_mm3": 22784.9,
-    "bounds_mm": [
+      200.0,
       68.0,
-      8.0,
+      290.0
+    ],
+    "file": "parts/02_open_portal_frame.step",
+    "print_stl": "print/02_open_portal_frame.stl",
+    "print_file": "print/02_open_portal_frame.step",
+    "print_bounds_mm": [
+      200.0,
+      290.004,
       68.0
     ]
   },
-  "07_stop_bridge": {
+  "18_fine_height_knob": {
     "printed": true,
+    "installed": true,
+    "group": "fixed",
+    "role": "fine-height knob with captive metal jam nuts; do not carry fixture by knob",
     "solids": 1,
-    "volume_mm3": 86915.4,
+    "volume_mm3": 7720.781,
     "bounds_mm": [
-      80.0,
-      12.0,
-      268.0
+      31.704,
+      31.704,
+      12.0
+    ],
+    "file": "parts/18_fine_height_knob.step",
+    "print_stl": "print/18_fine_height_knob.stl",
+    "print_file": "print/18_fine_height_knob.step",
+    "print_bounds_mm": [
+      31.719,
+      31.719,
+      12.016
     ]
   },
-  "02_structural_lid": {
+  "COUPON_bearing_and_dowel_fits": {
     "printed": true,
+    "installed": false,
+    "group": "fixed",
+    "role": "8.0/8.1/8.2mm shaft,12.05mm sleeve and6.1mm dowel fit coupon",
     "solids": 1,
-    "volume_mm3": 555701.1,
+    "volume_mm3": 14301.279,
     "bounds_mm": [
-      300.0,
-      310.0,
-      6.0
-    ]
-  },
-  "08a_tower_lower_1": {
-    "printed": true,
-    "solids": 1,
-    "volume_mm3": 205854.5,
-    "bounds_mm": [
-      40.0,
-      54.0,
-      202.0
-    ]
-  },
-  "08a_tower_lower_2": {
-    "printed": true,
-    "solids": 1,
-    "volume_mm3": 205854.5,
-    "bounds_mm": [
-      40.0,
-      54.0,
-      202.0
-    ]
-  },
-  "08b_tower_upper": {
-    "printed": true,
-    "solids": 1,
-    "volume_mm3": 547703.2,
-    "bounds_mm": [
-      260.0,
-      24.0,
-      270.0
-    ]
-  },
-  "08c_tower_splice_1": {
-    "printed": true,
-    "solids": 1,
-    "volume_mm3": 55957.8,
-    "bounds_mm": [
-      40.0,
-      12.0,
-      120.0
-    ]
-  },
-  "08c_tower_splice_2": {
-    "printed": true,
-    "solids": 1,
-    "volume_mm3": 55957.8,
-    "bounds_mm": [
-      40.0,
-      12.0,
-      120.0
-    ]
-  },
-  "09_height_carriage": {
-    "printed": true,
-    "solids": 1,
-    "volume_mm3": 142439.9,
-    "bounds_mm": [
-      260.0,
       72.0,
-      40.0
-    ]
-  },
-  "10_yaw_plate": {
-    "printed": true,
-    "solids": 1,
-    "volume_mm3": 19227.1,
-    "bounds_mm": [
-      64.0,
-      40.0,
-      8.0
-    ]
-  },
-  "11_pitch_cheek_1": {
-    "printed": true,
-    "solids": 1,
-    "volume_mm3": 10198.6,
-    "bounds_mm": [
-      10.0,
-      34.0,
-      38.0
-    ]
-  },
-  "11_pitch_cheek_2": {
-    "printed": true,
-    "solids": 1,
-    "volume_mm3": 10198.6,
-    "bounds_mm": [
-      10.0,
-      34.0,
-      38.0
-    ]
-  },
-  "12_sliding_pitch_bushing": {
-    "printed": true,
-    "solids": 1,
-    "volume_mm3": 22394.1,
-    "bounds_mm": [
-      44.0,
-      45.8,
-      36.23
-    ]
-  },
-  "13_stone_carrier": {
-    "printed": true,
-    "solids": 1,
-    "volume_mm3": 200193.9,
-    "bounds_mm": [
-      80.0,
-      215.8,
-      108.89
-    ]
-  },
-  "17_stone_keeper_1": {
-    "printed": true,
-    "solids": 1,
-    "volume_mm3": 851.9,
-    "bounds_mm": [
-      12.0,
-      14.53,
-      17.52
-    ]
-  },
-  "17_stone_keeper_2": {
-    "printed": true,
-    "solids": 1,
-    "volume_mm3": 851.9,
-    "bounds_mm": [
-      12.0,
-      14.53,
-      17.52
-    ]
-  },
-  "17_stone_keeper_3": {
-    "printed": true,
-    "solids": 1,
-    "volume_mm3": 851.9,
-    "bounds_mm": [
-      12.0,
-      14.53,
-      17.52
-    ]
-  },
-  "17_stone_keeper_4": {
-    "printed": true,
-    "solids": 1,
-    "volume_mm3": 851.9,
-    "bounds_mm": [
-      12.0,
-      14.53,
-      17.52
-    ]
-  },
-  "14_floating_end_pad": {
-    "printed": true,
-    "solids": 1,
-    "volume_mm3": 9187.6,
-    "bounds_mm": [
-      65.0,
-      13.85,
-      24.6
-    ]
-  },
-  "15_rod_stop_1": {
-    "printed": true,
-    "solids": 1,
-    "volume_mm3": 3070.2,
-    "bounds_mm": [
-      20.0,
-      18.12,
-      22.9
-    ]
-  },
-  "15_rod_stop_2": {
-    "printed": true,
-    "solids": 1,
-    "volume_mm3": 3070.2,
-    "bounds_mm": [
-      20.0,
-      18.12,
-      22.9
-    ]
-  },
-  "REF_whetstone_60x180x30": {
-    "printed": false,
-    "solids": 1,
-    "volume_mm3": 324000.0,
-    "bounds_mm": [
-      60.0,
-      179.41,
-      89.75
-    ]
-  },
-  "REF_guide_rod_8x500": {
-    "printed": false,
-    "solids": 1,
-    "volume_mm3": 25132.7,
-    "bounds_mm": [
-      8.0,
-      472.58,
-      178.53
-    ]
-  },
-  "REF_M10_axle_100": {
-    "printed": false,
-    "solids": 1,
-    "volume_mm3": 7854.0,
-    "bounds_mm": [
-      10.0,
-      100.0,
+      24.0,
       10.0
+    ],
+    "file": "parts/COUPON_bearing_and_dowel_fits.step",
+    "print_stl": "print/COUPON_bearing_and_dowel_fits.stl",
+    "print_file": "print/COUPON_bearing_and_dowel_fits.step",
+    "print_bounds_mm": [
+      72.0,
+      24.0,
+      10.008
     ]
   },
-  "REF_stop_pin_M5": {
-    "printed": false,
+  "03_fixed_cartridge_dock": {
+    "printed": true,
+    "installed": true,
+    "group": "fixed",
+    "role": "ribbed stationary registration dock",
     "solids": 1,
-    "volume_mm3": 785.4,
+    "volume_mm3": 249874.607,
     "bounds_mm": [
-      5.0,
-      40.0,
-      5.0
+      112.0,
+      46.0,
+      162.0
+    ],
+    "file": "parts/03_fixed_cartridge_dock.step",
+    "print_stl": "print/03_fixed_cartridge_dock.stl",
+    "print_file": "print/03_fixed_cartridge_dock.step",
+    "print_bounds_mm": [
+      112.0,
+      46.002,
+      162.003
     ]
   },
-  "REF_locking_pin_5": {
-    "printed": false,
+  "04_removable_knife_cartridge": {
+    "printed": true,
+    "installed": true,
+    "group": "cartridge",
+    "role": "full-width lower jaw and symmetric registration flange",
     "solids": 1,
-    "volume_mm3": 589.0,
+    "volume_mm3": 74680.786,
     "bounds_mm": [
-      5.0,
-      30.0,
-      5.0
+      124.0,
+      68.0,
+      38.0
+    ],
+    "file": "parts/04_removable_knife_cartridge.step",
+    "print_stl": "print/04_removable_knife_cartridge.stl",
+    "print_file": "print/04_removable_knife_cartridge.step",
+    "print_bounds_mm": [
+      124.0,
+      38.0,
+      68.002
     ]
   },
-  "REF_yaw_pivot_M8": {
-    "printed": false,
+  "05_upper_knife_jaw": {
+    "printed": true,
+    "installed": true,
+    "group": "cartridge",
+    "role": "thin-nose jaw with captive metal jack nuts",
     "solids": 1,
-    "volume_mm3": 1508.0,
+    "volume_mm3": 29753.215,
     "bounds_mm": [
-      8.0,
-      8.0,
-      30.0
+      124.0,
+      47.0,
+      7.0
+    ],
+    "file": "parts/05_upper_knife_jaw.step",
+    "print_stl": "print/05_upper_knife_jaw.stl",
+    "print_file": "print/05_upper_knife_jaw.step",
+    "print_bounds_mm": [
+      7.005,
+      47.0,
+      124.0
+    ]
+  },
+  "06_blade_shim_3mm": {
+    "printed": true,
+    "installed": true,
+    "group": "cartridge",
+    "role": "selected blade-centering shim",
+    "solids": 1,
+    "volume_mm3": 3904.0,
+    "bounds_mm": [
+      122.0,
+      16.0,
+      2.0
+    ],
+    "file": "parts/06_blade_shim_3mm.step",
+    "print_stl": "print/06_blade_shim_3mm.stl",
+    "print_file": "print/06_blade_shim_3mm.step",
+    "print_bounds_mm": [
+      122.0,
+      16.0,
+      2.0
     ]
   },
   "REF_blade_envelope": {
     "printed": false,
+    "installed": true,
+    "group": "cartridge",
+    "role": "300 mm tapered dummy-blade envelope",
     "solids": 1,
-    "volume_mm3": 36000.0,
+    "volume_mm3": 27900.0,
     "bounds_mm": [
       300.0,
       45.0,
       3.0
-    ]
+    ],
+    "file": "parts/REF_blade_envelope.step"
   },
   "REF_handle_envelope": {
     "printed": false,
+    "installed": true,
+    "group": "cartridge",
+    "role": "reference handle; cartridge is flipped away from fixture",
     "solids": 1,
     "volume_mm3": 60000.0,
     "bounds_mm": [
       100.0,
       30.0,
       20.0
+    ],
+    "file": "parts/REF_handle_envelope.step"
+  },
+  "SETUP_28mm_protrusion_gauge": {
+    "printed": true,
+    "installed": false,
+    "group": "setup",
+    "role": "28 mm edge-to-nose setup gauge",
+    "solids": 1,
+    "volume_mm3": 7176.0,
+    "bounds_mm": [
+      52.0,
+      34.0,
+      9.0
+    ],
+    "file": "parts/SETUP_28mm_protrusion_gauge.step",
+    "print_stl": "print/SETUP_28mm_protrusion_gauge.stl",
+    "print_file": "print/SETUP_28mm_protrusion_gauge.step",
+    "print_bounds_mm": [
+      52.0,
+      34.0,
+      9.0
     ]
+  },
+  "05_height_carriage": {
+    "printed": true,
+    "installed": true,
+    "group": "height",
+    "role": "fine-adjustable shelf with independent side clamps",
+    "solids": 1,
+    "volume_mm3": 47838.988,
+    "bounds_mm": [
+      184.0,
+      70.0,
+      32.0
+    ],
+    "file": "parts/05_height_carriage.step",
+    "print_stl": "print/05_height_carriage.stl",
+    "print_file": "print/05_height_carriage.step",
+    "print_bounds_mm": [
+      184.0,
+      70.0,
+      32.003
+    ]
+  },
+  "06_yaw_plate": {
+    "printed": true,
+    "installed": true,
+    "group": "yaw",
+    "role": "yaw plate on narrow shelf, leaving cheek nuts accessible",
+    "solids": 1,
+    "volume_mm3": 15960.38,
+    "bounds_mm": [
+      64.0,
+      46.0,
+      6.0
+    ],
+    "file": "parts/06_yaw_plate.step",
+    "print_stl": "print/06_yaw_plate.stl",
+    "print_file": "print/06_yaw_plate.step",
+    "print_bounds_mm": [
+      64.0,
+      46.0,
+      6.008
+    ]
+  },
+  "07_pitch_cheek_1": {
+    "printed": true,
+    "installed": true,
+    "group": "yaw",
+    "role": "8 mm trunnion engagement",
+    "solids": 1,
+    "volume_mm3": 8777.241,
+    "bounds_mm": [
+      10.0,
+      30.0,
+      38.0
+    ],
+    "file": "parts/07_pitch_cheek_1.step",
+    "print_stl": "print/07_pitch_cheek_1.stl",
+    "print_file": "print/07_pitch_cheek_1.step",
+    "print_bounds_mm": [
+      10.007,
+      30.0,
+      38.004
+    ]
+  },
+  "07_pitch_cheek_2": {
+    "printed": true,
+    "installed": true,
+    "group": "yaw",
+    "role": "8 mm trunnion engagement",
+    "solids": 1,
+    "volume_mm3": 8777.241,
+    "bounds_mm": [
+      10.0,
+      30.0,
+      38.0
+    ],
+    "file": "parts/07_pitch_cheek_2.step",
+    "print_stl": "print/07_pitch_cheek_2.stl",
+    "print_file": "print/07_pitch_cheek_2.step",
+    "print_bounds_mm": [
+      10.007,
+      30.0,
+      38.004
+    ]
+  },
+  "08_pitch_housing": {
+    "printed": true,
+    "installed": true,
+    "group": "pitch",
+    "role": "replaceable sleeve housing",
+    "solids": 1,
+    "volume_mm3": 20823.666,
+    "bounds_mm": [
+      52.0,
+      45.796,
+      36.233
+    ],
+    "file": "parts/08_pitch_housing.step",
+    "print_stl": "print/08_pitch_housing.stl",
+    "print_file": "print/08_pitch_housing.step",
+    "print_bounds_mm": [
+      52.007,
+      28.0,
+      40.008
+    ]
+  },
+  "09_calibrated_guide_sleeve": {
+    "printed": true,
+    "installed": true,
+    "group": "pitch",
+    "role": "replaceable 8.1 ID / 12 OD / 40 mm sleeve",
+    "solids": 1,
+    "volume_mm3": 2462.694,
+    "bounds_mm": [
+      12.0,
+      41.692,
+      24.957
+    ],
+    "file": "parts/09_calibrated_guide_sleeve.step",
+    "print_stl": "print/09_calibrated_guide_sleeve.stl",
+    "print_file": "print/09_calibrated_guide_sleeve.step",
+    "print_bounds_mm": [
+      12.008,
+      12.008,
+      40.008
+    ]
+  },
+  "15_split_rod_stop_1": {
+    "printed": true,
+    "installed": true,
+    "group": "rod_stops",
+    "role": "captive-nut split travel collar",
+    "solids": 1,
+    "volume_mm3": 3584.37,
+    "bounds_mm": [
+      20.0,
+      18.801,
+      24.777
+    ],
+    "file": "parts/15_split_rod_stop_1.step",
+    "print_stl": "print/15_split_rod_stop_1.stl",
+    "print_file": "print/15_split_rod_stop_1.step",
+    "print_bounds_mm": [
+      20.022,
+      22.011,
+      12.036
+    ]
+  },
+  "15_split_rod_stop_2": {
+    "printed": true,
+    "installed": true,
+    "group": "rod_stops",
+    "role": "captive-nut split travel collar",
+    "solids": 1,
+    "volume_mm3": 3584.37,
+    "bounds_mm": [
+      20.0,
+      18.801,
+      24.777
+    ],
+    "file": "parts/15_split_rod_stop_2.step",
+    "print_stl": "print/15_split_rod_stop_2.stl",
+    "print_file": "print/15_split_rod_stop_2.step",
+    "print_bounds_mm": [
+      20.022,
+      22.011,
+      12.036
+    ]
+  },
+  "13_ribbed_stone_cassette": {
+    "printed": true,
+    "installed": true,
+    "group": "stone",
+    "role": "fixed corner ledges and split shaft clamps",
+    "solids": 1,
+    "volume_mm3": 83976.117,
+    "bounds_mm": [
+      82.0,
+      190.854,
+      113.16
+    ],
+    "file": "parts/13_ribbed_stone_cassette.step",
+    "print_stl": "print/13_ribbed_stone_cassette.stl",
+    "print_file": "print/13_ribbed_stone_cassette.step",
+    "print_bounds_mm": [
+      82.0,
+      190.002,
+      59.0
+    ]
+  },
+  "14_removable_end_gate": {
+    "printed": true,
+    "installed": true,
+    "group": "stone",
+    "role": "two-screw axial stone gate",
+    "solids": 1,
+    "volume_mm3": 17097.536,
+    "bounds_mm": [
+      80.0,
+      17.951,
+      35.881
+    ],
+    "file": "parts/14_removable_end_gate.step",
+    "print_stl": "print/14_removable_end_gate.stl",
+    "print_file": "print/14_removable_end_gate.step",
+    "print_bounds_mm": [
+      80.0,
+      6.003,
+      36.0
+    ]
+  },
+  "REF_whetstone": {
+    "printed": false,
+    "installed": true,
+    "group": "stone",
+    "role": "purchased double-sided stone; working face at localZ0",
+    "solids": 1,
+    "volume_mm3": 324000.0,
+    "bounds_mm": [
+      60.0,
+      179.405,
+      89.754
+    ],
+    "file": "parts/REF_whetstone.step",
+    "print_rotation": {
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 160.0
+    }
+  },
+  "REF_stone_backing_1": {
+    "printed": false,
+    "installed": true,
+    "group": "stone",
+    "role": "firm resilient roof backing",
+    "solids": 1,
+    "volume_mm3": 1200.0,
+    "bounds_mm": [
+      60.0,
+      10.081,
+      5.3
+    ],
+    "file": "parts/REF_stone_backing_1.step",
+    "print_rotation": {
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 160.0
+    }
+  },
+  "REF_stone_backing_2": {
+    "printed": false,
+    "installed": true,
+    "group": "stone",
+    "role": "firm resilient roof backing",
+    "solids": 1,
+    "volume_mm3": 1200.0,
+    "bounds_mm": [
+      60.0,
+      10.081,
+      5.3
+    ],
+    "file": "parts/REF_stone_backing_2.step",
+    "print_rotation": {
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 160.0
+    }
+  },
+  "REF_stone_backing_3": {
+    "printed": false,
+    "installed": true,
+    "group": "stone",
+    "role": "firm resilient roof backing",
+    "solids": 1,
+    "volume_mm3": 1200.0,
+    "bounds_mm": [
+      60.0,
+      10.081,
+      5.3
+    ],
+    "file": "parts/REF_stone_backing_3.step",
+    "print_rotation": {
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 160.0
+    }
+  },
+  "REF_end_pad_fixed": {
+    "printed": false,
+    "installed": true,
+    "group": "stone",
+    "role": "soft end cushion",
+    "solids": 1,
+    "volume_mm3": 3600.0,
+    "bounds_mm": [
+      60.0,
+      12.14,
+      28.875
+    ],
+    "file": "parts/REF_end_pad_fixed.step",
+    "print_rotation": {
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 160.0
+    }
+  },
+  "REF_end_pad_gate": {
+    "printed": false,
+    "installed": true,
+    "group": "stone",
+    "role": "soft end cushion",
+    "solids": 1,
+    "volume_mm3": 3600.0,
+    "bounds_mm": [
+      60.0,
+      12.14,
+      28.875
+    ],
+    "file": "parts/REF_end_pad_gate.step",
+    "print_rotation": {
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 160.0
+    }
+  },
+  "REF_side_pad_1": {
+    "printed": false,
+    "installed": true,
+    "group": "stone",
+    "role": "firm padded contact for side screw",
+    "solids": 1,
+    "volume_mm3": 480.0,
+    "bounds_mm": [
+      2.0,
+      17.778,
+      30.927
+    ],
+    "file": "parts/REF_side_pad_1.step",
+    "print_rotation": {
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 160.0
+    }
+  },
+  "REF_side_pad_2": {
+    "printed": false,
+    "installed": true,
+    "group": "stone",
+    "role": "firm padded contact for side screw",
+    "solids": 1,
+    "volume_mm3": 480.0,
+    "bounds_mm": [
+      2.0,
+      17.778,
+      30.927
+    ],
+    "file": "parts/REF_side_pad_2.step",
+    "print_rotation": {
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 160.0
+    }
+  },
+  "REF_side_pad_3": {
+    "printed": false,
+    "installed": true,
+    "group": "stone",
+    "role": "firm padded contact for side screw",
+    "solids": 1,
+    "volume_mm3": 480.0,
+    "bounds_mm": [
+      2.0,
+      17.778,
+      30.927
+    ],
+    "file": "parts/REF_side_pad_3.step",
+    "print_rotation": {
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 160.0
+    }
+  },
+  "REF_side_pad_4": {
+    "printed": false,
+    "installed": true,
+    "group": "stone",
+    "role": "firm padded contact for side screw",
+    "solids": 1,
+    "volume_mm3": 480.0,
+    "bounds_mm": [
+      2.0,
+      17.778,
+      30.927
+    ],
+    "file": "parts/REF_side_pad_4.step",
+    "print_rotation": {
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "angle": 160.0
+    }
+  },
+  "OPTION_blade_shim_for_1mm": {
+    "printed": true,
+    "installed": false,
+    "group": "options",
+    "role": "selected blade-centering shim",
+    "solids": 1,
+    "volume_mm3": 5856.0,
+    "bounds_mm": [
+      122.0,
+      16.0,
+      3.0
+    ],
+    "file": "parts/OPTION_blade_shim_for_1mm.step",
+    "print_stl": "print/OPTION_blade_shim_for_1mm.stl",
+    "print_file": "print/OPTION_blade_shim_for_1mm.step",
+    "print_bounds_mm": [
+      122.0,
+      16.0,
+      3.0
+    ],
+    "optional": true,
+    "blade_thickness_mm": 1
+  },
+  "OPTION_blade_shim_for_2mm": {
+    "printed": true,
+    "installed": false,
+    "group": "options",
+    "role": "selected blade-centering shim",
+    "solids": 1,
+    "volume_mm3": 4880.0,
+    "bounds_mm": [
+      122.0,
+      16.0,
+      2.5
+    ],
+    "file": "parts/OPTION_blade_shim_for_2mm.step",
+    "print_stl": "print/OPTION_blade_shim_for_2mm.stl",
+    "print_file": "print/OPTION_blade_shim_for_2mm.step",
+    "print_bounds_mm": [
+      122.0,
+      16.0,
+      2.5
+    ],
+    "optional": true,
+    "blade_thickness_mm": 2
+  },
+  "OPTION_blade_shim_for_4mm": {
+    "printed": true,
+    "installed": false,
+    "group": "options",
+    "role": "selected blade-centering shim",
+    "solids": 1,
+    "volume_mm3": 2928.0,
+    "bounds_mm": [
+      122.0,
+      16.0,
+      1.5
+    ],
+    "file": "parts/OPTION_blade_shim_for_4mm.step",
+    "print_stl": "print/OPTION_blade_shim_for_4mm.stl",
+    "print_file": "print/OPTION_blade_shim_for_4mm.step",
+    "print_bounds_mm": [
+      122.0,
+      16.0,
+      1.5
+    ],
+    "optional": true,
+    "blade_thickness_mm": 4
+  },
+  "OPTION_blade_shim_for_5mm": {
+    "printed": true,
+    "installed": false,
+    "group": "options",
+    "role": "selected blade-centering shim",
+    "solids": 1,
+    "volume_mm3": 1952.0,
+    "bounds_mm": [
+      122.0,
+      16.0,
+      1.0
+    ],
+    "file": "parts/OPTION_blade_shim_for_5mm.step",
+    "print_stl": "print/OPTION_blade_shim_for_5mm.stl",
+    "print_file": "print/OPTION_blade_shim_for_5mm.step",
+    "print_bounds_mm": [
+      122.0,
+      16.0,
+      1.0
+    ],
+    "optional": true,
+    "blade_thickness_mm": 5
+  },
+  "OPTION_blade_shim_for_6mm": {
+    "printed": true,
+    "installed": false,
+    "group": "options",
+    "role": "selected blade-centering shim",
+    "solids": 1,
+    "volume_mm3": 976.0,
+    "bounds_mm": [
+      122.0,
+      16.0,
+      0.5
+    ],
+    "file": "parts/OPTION_blade_shim_for_6mm.step",
+    "print_stl": "print/OPTION_blade_shim_for_6mm.stl",
+    "print_file": "print/OPTION_blade_shim_for_6mm.step",
+    "print_bounds_mm": [
+      122.0,
+      16.0,
+      0.5
+    ],
+    "optional": true,
+    "blade_thickness_mm": 6
+  },
+  "REF_guide_rod_8x400": {
+    "printed": false,
+    "installed": true,
+    "group": "stone",
+    "role": "purchased ground smooth shaft",
+    "solids": 1,
+    "volume_mm3": 20106.193,
+    "bounds_mm": [
+      8.0,
+      378.613,
+      144.326
+    ],
+    "file": "parts/REF_guide_rod_8x400.step"
   }
 }

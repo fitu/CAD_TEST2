@@ -1,0 +1,19 @@
+{
+  "currency": "ILS",
+  "pricing_basis": "Illustrative Israeli retail allowances, VAT-inclusive where locally purchased; not live supplier quotations. Shipping, tools, labor and printer ownership excluded.",
+  "total_with_stone_and_two_spools_ILS": [
+    357.3,
+    833.6
+  ],
+  "total_if_stone_owned_ILS": [
+    297.3,
+    653.6
+  ],
+  "printed_solid_cm3_including_setup_tools": 1286.305,
+  "PETG_consumed_kg_estimate_including_15percent_waste": [
+    1.195,
+    1.684
+  ],
+  "method": "Actual STEP volume/area; capped area*1.2/2.4mm uniform-shell equivalents and 40/60% infill. Engineering approximation, not sliced toolpaths; excludes failed full reprints.",
+  "PETG_purchase": "Two 1kg spools at70\u2013120ILS each. Recheck actual slicer material including supports before printing."
+}

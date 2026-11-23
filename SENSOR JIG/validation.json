@@ -23,19 +23,19 @@
   ],
   "oriented_print_sizes_mm": {
     "rail_left": [
+      248.0,
       72.0,
-      58.0,
-      248.0
+      58.0
     ],
     "rail_right": [
+      210.0,
       44.0,
-      40.0,
-      210.0
+      40.0
     ],
     "rail_splice": [
       110.0,
       24.0,
-      24.0
+      23.293
     ],
     "x_carriage": [
       60.0,
@@ -45,7 +45,7 @@
     "z_sensor_slide": [
       153.0,
       55.0,
-      26.0
+      29.0
     ],
     "z_top_stop": [
       32.0,
@@ -63,8 +63,25 @@
       2.0
     ]
   },
+  "external_chamfer_mm": 1,
+  "print_overhang_audit": {
+    "target_minimum_slope_from_bed_deg": 45,
+    "mesh_angular_tolerance_deg": 1,
+    "shallower_downward_surface_area_excluding_bed_mm2": {
+      "rail_left": 53.38,
+      "rail_right": 53.38,
+      "rail_splice": 0.0,
+      "x_carriage": 0.0,
+      "z_sensor_slide": 0.0,
+      "z_top_stop": 0.0,
+      "pressure_shoe": 0.0,
+      "wall_pad_tpu": 0.0
+    },
+    "exceptions": "Two 1 mm radial annular M5 head seats on each rail"
+  },
   "limitations": [
     "Discrete CAD checks",
-    "No physical load, grip or print tests"
+    "No slicer or physical print validation",
+    "No physical load or grip tests"
   ]
 }

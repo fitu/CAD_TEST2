@@ -18,6 +18,7 @@ Z_STROKE = 80
 SENSOR_Y = 78
 FITS = {"rail": 0.25, "splice": 0.30, "vertical": 0.25}
 H2D = (300, 320, 325)
+EDGE_CHAMFER = 1
 
 
 def box(x, y, z, dx, dy, dz):
@@ -29,6 +30,48 @@ def cyl(x, y, z, diameter, length, axis):
 
 
 X, Y, Z = (1, 0, 0), (0, 1, 0), (0, 0, 1)
+NEG_X = (-1, 0, 0)
+
+
+def prism(points, length, axis):
+    wire = cq.Wire.makePolygon([cq.Vector(*point) for point in points], close=True)
+    return cq.Solid.extrudeLinear(wire, [], cq.Vector(*axis) * length)
+
+
+def beveled(shape):
+    # Chamfer convex edges only. Beveling a reentrant edge would add material
+    # in front of a stop or into the slider's travel.
+    edges = []
+    for edge in shape.Edges():
+        point = edge.Center()
+        first, second = edge.ancestors(shape, "Face").Faces()
+        tangent = first.normalAt(point) - second.normalAt(point)
+        if not any(shape.isInside(point + tangent * sign * 0.1) for sign in (-1, 1)):
+            edges.append(edge)
+    return cq.Workplane(obj=shape).newObject(edges).chamfer(EDGE_CHAMFER).val()
+
+
+def bevel_openings(shape, mouths):
+    edges = []
+    for edge in shape.Edges():
+        bounds = edge.BoundingBox()
+        for axis, coordinate, cross_section in mouths:
+            if (abs(getattr(bounds, axis + "min") - coordinate) < 1e-6
+                    and abs(getattr(bounds, axis + "max") - coordinate) < 1e-6
+                    and cross_section(edge.Center())):
+                edges.append(edge)
+                break
+    return cq.Workplane(obj=shape).newObject(edges).chamfer(EDGE_CHAMFER).val()
+
+
+def roofed_hole(origin, diameter, length, axis, up):
+    """Keep the full screw clearance and replace the unsupported arc with a 45° roof."""
+    center = cq.Vector(*origin)
+    rise = cq.Vector(*up) * (diameter / (2 * sqrt(2)))
+    half_width = cq.Vector(*axis).cross(rise)
+    roof = [center + rise - half_width, center + rise + half_width, center + rise * 2]
+    return fused(cyl(*origin, diameter, length, axis),
+                 prism([point.toTuple() for point in roof], length, axis))
 
 
 def hex_prism(origin, across_flats, length, axis):
@@ -55,68 +98,120 @@ def fused(*parts):
 SPLICE_BOLTS = (-42, -17, 17, 42)
 
 
+def splice_profile(x, length, fit=0):
+    shoulder, half_width = fit, 12 + fit
+    return prism(
+        [(x, -12 - fit, -half_width), (x, -12 - fit, half_width),
+         (x, shoulder, half_width), (x, shoulder + half_width, 0),
+         (x, shoulder, -half_width)],
+        length, X,
+    )
+
+
 def rail_parts():
-    fit = FITS["splice"]
-    cavity = box(-56, -12 - fit, -12 - fit, 112, 24 + 2 * fit, 24 + 2 * fit)
-    left = fused(box(RAIL_LEFT, -20, -20, 234, 40, 40),
-                 box(-248, -29, -36, 14, 58, 72)).cut(cavity)
-    right = fused(box(0, -20, -20, RAIL_RIGHT, 40, 40),
-                  box(184, -10, 20, 6, 20, 4)).cut(cavity)
-    splice = box(-55, -12, -12, 110, 24, 24)
+    cavity = splice_profile(-56, 112, FITS["splice"])
+    # The wall flange and the right stop start on the same print plane as each rail.
+    left = beveled(fused(box(RAIL_LEFT, -20, -20, 234, 40, 40),
+                         box(-248, -20, -36, 14, 58, 72))).cut(cavity)
+    right = beveled(fused(box(0, -20, -20, RAIL_RIGHT, 40, 40),
+                          box(184, -20, 20, 6, 30, 4))).cut(cavity)
+    splice = beveled(splice_profile(-55, 110))
 
     for x in SPLICE_BOLTS:
         through = cyl(x, -21, 0, 5.5, 42, Y)
-        head = cyl(x, -21, 0, 9.6, 8, Y)
+        head = cyl(x, -21, 0, 9.5, 8, Y)
+        # A 45° bevel meets the clearance bore above the screw head. Keep
+        # the remaining 1 mm radial seat flat for the socket-head screw.
+        head_transition = cq.Solid.makeCone(3.75, 2.75, 1, cq.Vector(x, -13, 0), cq.Vector(*Y))
         nut = hex_prism((x, 12.5, 0), 8.4, 8, Y)
         if x < 0:
-            left = left.cut(through, head, nut)
+            left = left.cut(through, head, head_transition, nut)
         else:
-            right = right.cut(through, head, nut)
+            right = right.cut(through, head, head_transition, nut)
         splice = splice.cut(through)
 
     # Fit an AF19 steel nut sideways. The nut loads the internal shoulder in compression.
-    right = right.cut(cyl(149, 0, 0, 13, RAIL_RIGHT - 148, X),
+    right = right.cut(roofed_hole((149, 0, 0), 13, RAIL_RIGHT - 148, X, Y),
                       hex_prism((PRELOAD_NUT_X, 0, 0), 19.5, 10.5, X),
                       box(PRELOAD_NUT_X, 0, -9.75, 10.5, 21, 19.5))
+    mouths = [
+        ("x", 0, lambda p: abs(p.y) < 14 and abs(p.z) < 14),
+        ("y", -20, lambda p: abs(p.z) < 6 and any(abs(p.x - x) < 6 for x in SPLICE_BOLTS)),
+        ("y", 20, lambda p: abs(p.z) < 6 and any(abs(p.x - x) < 6 for x in SPLICE_BOLTS)),
+    ]
+    left = bevel_openings(left, mouths)
+    right = bevel_openings(right, mouths)
     return left.clean(), right.clean(), splice.clean()
 
 
+def vertical_profile(z, length, fit=0):
+    return prism(
+        [(13 + fit, 39 - fit, z), (13 + fit, 57 + fit, z),
+         (-4 - fit, 57 + fit, z), (-13 - 2 * fit, 48, z),
+         (-4 - fit, 39 - fit, z)],
+        length, Z,
+    )
+
+
 def carriage():
-    structure = fused(box(-25, -26, -26, 50, 52, 52),
-                      box(-19, 22, -23, 38, 13, 46),
-                      box(-19, 33, -30, 38, 30, 60))
+    structure = beveled(fused(box(-25, -26, -26, 50, 52, 52),
+                              box(-25, 22, -23, 50, 13, 46),
+                              box(-25, 33, -30, 50, 30, 60)))
     h = FITS["rail"]
-    v = FITS["vertical"]
-    return structure.cut(
+    structure = structure.cut(
         box(-26, -20 - h, -20 - h, 52, 40 + 2 * h, 40 + 2 * h),
-        box(-13 - v, 39 - v, -31, 26 + 2 * v, 18 + 2 * v, 62),
-        cyl(0, -27, 0, 5.4, 8, Y),
-        cyl(0, -27, 0, 7.1, 6, Y),
-        cyl(0, 56, 0, 5.4, 8, Y),
-        cyl(0, 58, 0, 7.1, 6, Y),
-    ).clean()
+        vertical_profile(-31, 62, FITS["vertical"]),
+        roofed_hole((0, -27, 0), 5.4, 8, Y, NEG_X),
+        roofed_hole((0, -27, 0), 7.1, 6, Y, NEG_X),
+        roofed_hole((0, 56, 0), 5.4, 8, Y, NEG_X),
+        roofed_hole((0, 58, 0), 7.1, 6, Y, NEG_X),
+    )
+    rail_mouths = [("x", x, lambda p: abs(p.y) < 21 and abs(p.z) < 21)
+                   for x in (-25, 25)]
+    slide_mouths = [("z", z, lambda p: abs(p.x) < 14 and 38 < p.y < 58)
+                    for z in (-30, 30)]
+    return bevel_openings(structure, rail_mouths + slide_mouths).clean()
 
 
 def sensor_slide():
-    stem = box(-13, 39, -30, 26, 18, 140)
-    nose = box(-13, 39, -43, 26, 55, 13)
-    return fused(stem, nose).cut(
-        cyl(0, SENSOR_Y, -44, 10.4, 16, Z),
-        hex_prism((0, SENSOR_Y, -33), 17.4, 4, Z),
-        cyl(0, 82.5, -37, 4.4, 12.5, Y),
-        cyl(0, 88, -37, 5.6, 7, Y),
-        cyl(0, 48, 99, 3.6, 12, Z),
-        cyl(0, 48, 102, 5.6, 9, Z),
+    stem = vertical_profile(-30, 140)
+    nose = box(-16, 39, -43, 29, 55, 13)
+    nut_half_flat = 17.4 / 2
+    nut_shoulder = -17.4 / (2 * sqrt(3))
+    nut_roof = prism(
+        [(nut_shoulder, SENSOR_Y - nut_half_flat, -33),
+         (nut_shoulder, SENSOR_Y + nut_half_flat, -33),
+         (nut_shoulder - nut_half_flat, SENSOR_Y, -33)],
+        4, Z,
+    )
+    return beveled(fused(stem, nose)).cut(
+        roofed_hole((0, SENSOR_Y, -44), 10.4, 16, Z, NEG_X),
+        fused(hex_prism((0, SENSOR_Y, -33), 17.4, 4, Z), nut_roof),
+        roofed_hole((0, 82.5, -37), 4.4, 12.5, Y, NEG_X),
+        roofed_hole((0, 88, -37), 5.6, 7, Y, NEG_X),
+        roofed_hole((0, 48, 99), 3.6, 12, Z, NEG_X),
+        roofed_hole((0, 48, 102), 5.6, 9, Z, NEG_X),
     ).clean()
 
 
 def top_stop():
-    return box(-16, 34, 110, 32, 28, 6).cut(cyl(0, 48, 109, 4.5, 8, Z)).clean()
+    return beveled(box(-16, 34, 110, 32, 28, 6)).cut(cyl(0, 48, 109, 4.5, 8, Z)).clean()
 
 
 def pressure_shoe():
     # Local X=0 is the inner face. A steel washer fills the shallow seat.
-    return box(0, -29, -36, 8, 58, 72).cut(cyl(-1, 0, 0, 26, 3.5, X)).clean()
+    shoe = beveled(box(0, -20, -36, 8, 58, 72)).cut(cyl(-1, 0, 0, 26, 3.5, X))
+    return bevel_openings(shoe, [("x", 0, lambda p: abs(p.y) < 14 and abs(p.z) < 14)]).clean()
+
+
+def wall_pad():
+    # The 2 mm pad keeps both broad bonding and contact faces flat.
+    return cq.Workplane(obj=box(0, 0, 0, 58, 72, 2)).edges("|Z").chamfer(1).val()
+
+
+def pad_on_wall(x):
+    return (wall_pad().rotate((0, 0, 0), Y, 90).rotate((0, 0, 0), X, 90)
+            .translate((x, -20, -36)))
 
 
 def wall_hardware(gap):
@@ -139,7 +234,7 @@ def wall_hardware(gap):
     )
     return {
         "pressure_shoe": pressure_shoe().translate((shoe_start, 0, 0)),
-        "pad_right": box(right_wall - 2, -29, -36, 2, 58, 72),
+        "pad_right": pad_on_wall(right_wall - 2),
         "M12_preload_bolt": bolt,
         "M12_shoe_washer": foot_washer,
         "M12_jam_nut": jam_nut,
@@ -188,7 +283,7 @@ def make_parts():
         "rail_left": left, "rail_right": right, "rail_splice": splice,
         "x_carriage": carriage(), "z_sensor_slide": sensor_slide(),
         "z_top_stop": top_stop(), "pressure_shoe": pressure_shoe(),
-        "wall_pad_tpu": box(0, 0, 0, 58, 72, 2),
+        "wall_pad_tpu": wall_pad(),
     }
 
 
@@ -211,7 +306,7 @@ def collision_check(parts, label):
 def validated_poses(parts):
     static = {name: parts[name] for name in ("rail_left", "rail_right", "rail_splice")}
     static.update(joint_hardware())
-    static["pad_left"] = box(WALL_LEFT, -29, -36, 2, 58, 72)
+    static["pad_left"] = pad_on_wall(WALL_LEFT)
     tested_poses = 0
     engagement = {}
     for gap in WALL_GAPS:
@@ -256,14 +351,35 @@ def validated_poses(parts):
 
 
 def orient_for_print(name, shape):
-    if name == "rail_left":
-        shape = shape.rotate((0, 0, 0), Y, -90)
-    elif name in {"rail_right", "x_carriage", "pressure_shoe"}:
+    if name in {"rail_left", "rail_right", "rail_splice"}:
+        shape = shape.rotate((0, 0, 0), X, 90)
+    elif name in {"x_carriage", "pressure_shoe", "z_sensor_slide"}:
         shape = shape.rotate((0, 0, 0), Y, 90)
-    elif name == "z_sensor_slide":
-        shape = shape.rotate((0, 0, 0), Y, -90)
     bounds = shape.BoundingBox()
     return shape.translate((-bounds.xmin, -bounds.ymin, -bounds.zmin))
+
+
+def audit_print_overhangs(name, printable):
+    """Find downward surfaces shallower than 45°, excluding the build plane."""
+    import numpy as np
+
+    vertices, faces = printable.tessellate(0.04, 0.10)
+    triangles = np.asarray([v.toTuple() for v in vertices])[faces]
+    normals = np.cross(triangles[:, 1] - triangles[:, 0], triangles[:, 2] - triangles[:, 0])
+    doubled_areas = np.linalg.norm(normals, axis=1)
+    heights = triangles[:, :, 2]
+    # Tessellated cones can vary slightly from their exact 45° CAD slope.
+    angular_tolerance = cos(44 * pi / 180)
+    steep = ((heights.max(axis=1) > 0.01)
+             & (normals[:, 2] < -angular_tolerance * doubled_areas))
+    if name in {"rail_left", "rail_right"}:
+        # Each rail has two flat annular M5 head seats, 1 mm wide at Z=7.
+        allowed = np.all(np.abs(heights - 7) < 0.01, axis=1)
+        if np.any(steep & ~allowed) or not np.any(steep & allowed):
+            raise ValueError(f"{name} has an unexpected overhang or missing screw head seat")
+    elif np.any(steep):
+        raise ValueError(f"{name} has an overhang shallower than 45° away from the bed")
+    return round(float(doubled_areas[steep].sum()) / 2, 2)
 
 
 COLORS = {
@@ -359,7 +475,7 @@ def render_preview(parts):
 def main():
     parts = make_parts()
     assembly, results = validated_poses(parts)
-    sizes = {}
+    sizes, shallow_surfaces = {}, {}
     for directory in ("print", "step"):
         (ROOT / directory).mkdir(exist_ok=True)
     for name, part in parts.items():
@@ -371,6 +487,7 @@ def main():
         if not all(dimension <= maximum for dimension, maximum in zip(size, H2D)):
             raise ValueError(f"{name} exceeds the selected H2D envelope: {size}")
         sizes[name] = [round(dimension, 3) for dimension in size]
+        shallow_surfaces[name] = audit_print_overhangs(name, printable)
         cq.exporters.export(printable, str(ROOT / "print" / f"{name}.stl"),
                             tolerance=0.04, angularTolerance=0.10)
         cq.exporters.export(part, str(ROOT / "step" / f"{name}.step"))
@@ -381,8 +498,15 @@ def main():
     render_preview(assembly)
     results.update(status="passed", x_travel_mm=X_LIMITS[1] - X_LIMITS[0],
                    z_travel_mm=Z_STROKE, h2d_check_envelope_mm=H2D,
-                   oriented_print_sizes_mm=sizes,
-                   limitations=["Discrete CAD checks", "No physical load, grip or print tests"])
+                   oriented_print_sizes_mm=sizes, external_chamfer_mm=EDGE_CHAMFER,
+                   print_overhang_audit={
+                       "target_minimum_slope_from_bed_deg": 45,
+                       "mesh_angular_tolerance_deg": 1,
+                       "shallower_downward_surface_area_excluding_bed_mm2": shallow_surfaces,
+                       "exceptions": "Two 1 mm radial annular M5 head seats on each rail",
+                   },
+                   limitations=["Discrete CAD checks", "No slicer or physical print validation",
+                                "No physical load or grip tests"])
     (ROOT / "validation.json").write_text(json.dumps(results, indent=2) + "\n")
 
 

@@ -1,0 +1,70 @@
+{
+  "poses_checked": 45,
+  "physical_stop_geometries_checked": 4,
+  "wall_spans_mm": [
+    490,
+    500,
+    510
+  ],
+  "preload_nut_thread_engagement_mm": {
+    "490": 10,
+    "500": 10,
+    "510": 10
+  },
+  "sensor_keepout_diameter_mm": 20,
+  "sensor_keepout_depth_mm": 100,
+  "status": "passed",
+  "x_travel_mm": 368,
+  "z_travel_mm": 80,
+  "h2d_check_envelope_mm": [
+    300,
+    320,
+    325
+  ],
+  "oriented_print_sizes_mm": {
+    "rail_left": [
+      72.0,
+      58.0,
+      248.0
+    ],
+    "rail_right": [
+      44.0,
+      40.0,
+      210.0
+    ],
+    "rail_splice": [
+      110.0,
+      24.0,
+      24.0
+    ],
+    "x_carriage": [
+      60.0,
+      89.0,
+      50.0
+    ],
+    "z_sensor_slide": [
+      153.0,
+      55.0,
+      26.0
+    ],
+    "z_top_stop": [
+      32.0,
+      28.0,
+      6.0
+    ],
+    "pressure_shoe": [
+      72.0,
+      58.0,
+      8.0
+    ],
+    "wall_pad_tpu": [
+      58.0,
+      72.0,
+      2.0
+    ]
+  },
+  "limitations": [
+    "Discrete CAD checks",
+    "No physical load, grip or print tests"
+  ]
+}

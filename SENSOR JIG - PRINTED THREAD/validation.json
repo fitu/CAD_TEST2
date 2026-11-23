@@ -1,0 +1,97 @@
+{
+  "thread_configurations_checked": 6,
+  "thread_pitch_mm": 7,
+  "thread_major_diameter_mm": 28,
+  "minimum_full_profile_engagement_mm": 28.385,
+  "minimum_pad_to_rail_gap_mm": 12,
+  "optional_wall_overlay_mm_per_side": [
+    0,
+    2
+  ],
+  "poses_checked": 15,
+  "physical_stop_geometries_checked": 4,
+  "wall_spans_mm": [
+    490,
+    500,
+    510
+  ],
+  "sensor_keepout_diameter_mm": 20,
+  "sensor_keepout_depth_mm": 100,
+  "status": "passed",
+  "x_travel_mm": 368,
+  "z_travel_mm": 80,
+  "h2d_check_envelope_mm": [
+    300,
+    320,
+    325
+  ],
+  "compensated_stl_sizes_mm": {
+    "rail_left": [
+      251.777,
+      73.096,
+      58.883
+    ],
+    "rail_right": [
+      44.67,
+      40.609,
+      213.198
+    ],
+    "rail_splice": [
+      111.675,
+      24.365,
+      23.648
+    ],
+    "x_carriage": [
+      60.914,
+      90.355,
+      50.761
+    ],
+    "z_sensor_slide": [
+      155.33,
+      55.838,
+      29.442
+    ],
+    "z_top_stop": [
+      32.487,
+      28.426,
+      6.091
+    ],
+    "printed_pad_screw": [
+      68.251,
+      68.251,
+      89.34
+    ]
+  },
+  "external_chamfer_mm": 1,
+  "assumed_linear_shrink_xyz": [
+    0.015,
+    0.015,
+    0.015
+  ],
+  "stl_scale_xyz": [
+    1.01522843,
+    1.01522843,
+    1.01522843
+  ],
+  "nominal_clearance_after_shrink_mm_per_side": 0.125,
+  "print_overhang_audit": {
+    "target_minimum_slope_from_bed_deg": 45,
+    "mesh_angular_tolerance_deg": 1,
+    "mesh_sliver_threshold_mm2": 0.02,
+    "shallower_downward_surface_area_excluding_bed_mm2": {
+      "rail_left": 53.38,
+      "rail_right": 0.0,
+      "rail_splice": 0.0,
+      "x_carriage": 0.0,
+      "z_sensor_slide": 0.0,
+      "z_top_stop": 0.0,
+      "printed_pad_screw": 0.0
+    },
+    "exceptions": "Two 1 mm radial annular M5 head seats on the left rail"
+  },
+  "limitations": [
+    "Discrete CAD checks",
+    "No slicer or physical print validation",
+    "No physical load or grip tests"
+  ]
+}

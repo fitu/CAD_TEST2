@@ -1,0 +1,95 @@
+{
+  "preload_nut_thread_engagement_mm": {
+    "490": 10,
+    "500": 10,
+    "510": 10
+  },
+  "rotating_end_configurations_checked": 48,
+  "minimum_rotating_end_to_rail_mm": 5.0,
+  "optional_wall_overlay_mm_per_side": [
+    0,
+    2
+  ],
+  "bolt_head_side_entry_positions_checked": 6,
+  "keeper_retention_and_bidirectional_drive_checked": true,
+  "poses_checked": 45,
+  "physical_stop_geometries_checked": 4,
+  "wall_spans_mm": [
+    490,
+    500,
+    510
+  ],
+  "sensor_keepout_diameter_mm": 20,
+  "sensor_keepout_depth_mm": 100,
+  "status": "passed",
+  "x_travel_mm": 368,
+  "z_travel_mm": 80,
+  "h2d_check_envelope_mm": [
+    300,
+    320,
+    325
+  ],
+  "oriented_print_sizes_mm": {
+    "rail_left": [
+      248.0,
+      72.0,
+      58.0
+    ],
+    "rail_right": [
+      210.0,
+      44.0,
+      40.0
+    ],
+    "rail_splice": [
+      110.0,
+      24.0,
+      23.293
+    ],
+    "x_carriage": [
+      60.0,
+      89.0,
+      50.0
+    ],
+    "z_sensor_slide": [
+      153.0,
+      55.0,
+      29.0
+    ],
+    "z_top_stop": [
+      32.0,
+      28.0,
+      6.0
+    ],
+    "rotating_pad": [
+      67.227,
+      67.227,
+      16.0
+    ],
+    "bolt_head_keeper": [
+      58.0,
+      22.0,
+      4.0
+    ]
+  },
+  "external_chamfer_mm": 1,
+  "print_overhang_audit": {
+    "target_minimum_slope_from_bed_deg": 45,
+    "mesh_angular_tolerance_deg": 1,
+    "shallower_downward_surface_area_excluding_bed_mm2": {
+      "rail_left": 53.38,
+      "rail_right": 53.38,
+      "rail_splice": 0.0,
+      "x_carriage": 0.0,
+      "z_sensor_slide": 0.0,
+      "z_top_stop": 0.0,
+      "rotating_pad": 0.0,
+      "bolt_head_keeper": 0.0
+    },
+    "exceptions": "Two 1 mm radial annular M5 head seats on each rail"
+  },
+  "limitations": [
+    "Discrete CAD checks",
+    "No slicer or physical print validation",
+    "No physical load or grip tests"
+  ]
+}

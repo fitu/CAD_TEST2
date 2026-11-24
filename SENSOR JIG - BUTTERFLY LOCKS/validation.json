@@ -1,0 +1,168 @@
+{
+  "thread_depth_mm": 165,
+  "thread_axis_offset_assembly_Y_mm": -3,
+  "thread_fit_sections_checked": 4,
+  "thread_pitch_mm": 7,
+  "thread_major_diameter_mm": 28,
+  "shaft_lengths_mm": [
+    72,
+    172
+  ],
+  "insertion_by_variant": {
+    "printed_pad_screw": {
+      "minimum_full_profile_engagement_mm": 30.5,
+      "minimum_tip_to_blind_end_mm": 105
+    },
+    "printed_pad_screw_long": {
+      "minimum_full_profile_engagement_mm": 130.5,
+      "minimum_tip_to_blind_end_mm": 5
+    },
+    "d_screw": {
+      "minimum_full_profile_engagement_mm": 30.5,
+      "minimum_tip_to_blind_end_mm": 105
+    },
+    "d_screw_long": {
+      "minimum_full_profile_engagement_mm": 130.5,
+      "minimum_tip_to_blind_end_mm": 5
+    }
+  },
+  "d_key_cad_fit_and_torque_faces_checked": true,
+  "minimum_combined_retained_crest_arc_degrees_geometric_estimate": 148,
+  "optional_wall_overlay_mm_per_side": [
+    0,
+    2
+  ],
+  "poses_checked": 15,
+  "physical_stop_geometries_checked": 4,
+  "wall_spans_mm": [
+    490,
+    500,
+    510
+  ],
+  "sensor_keepout_diameter_mm": 20,
+  "sensor_keepout_depth_mm": 100,
+  "status": "passed",
+  "x_travel_mm": 368,
+  "z_travel_mm": 80,
+  "h2d_check_envelope_mm": [
+    300,
+    320,
+    325
+  ],
+  "compensated_stl_sizes_mm": {
+    "rail_left": [
+      211.168,
+      73.096,
+      58.883
+    ],
+    "rail_right": [
+      253.807,
+      44.67,
+      40.609
+    ],
+    "rail_splice": [
+      111.675,
+      24.365,
+      23.648
+    ],
+    "x_carriage": [
+      70.051,
+      103.553,
+      50.761
+    ],
+    "z_sensor_slide": [
+      155.33,
+      55.838,
+      29.442
+    ],
+    "z_top_stop": [
+      32.487,
+      28.426,
+      6.091
+    ],
+    "printed_pad_screw": [
+      68.251,
+      68.251,
+      89.34
+    ],
+    "printed_pad_screw_long": [
+      68.251,
+      68.251,
+      190.863
+    ],
+    "split_pad": [
+      68.251,
+      68.251,
+      16.244
+    ],
+    "d_screw": [
+      83.249,
+      28.426,
+      21.32
+    ],
+    "d_screw_long": [
+      184.772,
+      28.426,
+      21.32
+    ],
+    "butterfly_screw": [
+      36.548,
+      37.563,
+      9.137
+    ]
+  },
+  "external_chamfer_mm": 1,
+  "assumed_linear_shrink_xyz": [
+    0.015,
+    0.015,
+    0.015
+  ],
+  "stl_scale_xyz": [
+    1.01522843,
+    1.01522843,
+    1.01522843
+  ],
+  "nominal_clearance_after_shrink_mm_per_side": 0.125,
+  "print_overhang_audit": {
+    "target_minimum_slope_from_bed_deg": 45,
+    "mesh_angular_tolerance_deg": 1,
+    "mesh_sliver_threshold_mm2": 0.02,
+    "shallower_downward_surface_area_excluding_bed_mm2": {
+      "d_screw": 0.0,
+      "d_screw_long": 0.0,
+      "split_pad": 0.0,
+      "printed_pad_screw": 0.0,
+      "printed_pad_screw_long": 100.18,
+      "rail_left": 55.02,
+      "rail_right": 55.04,
+      "rail_splice": 0.0,
+      "x_carriage": 0.0,
+      "z_sensor_slide": 0.0,
+      "z_top_stop": 0.0,
+      "butterfly_screw": 0.0
+    },
+    "exceptions": [
+      "Two 1 mm radial annular M5 head seats per rail",
+      "Local shallow facets on the upright integrated long screw"
+    ]
+  },
+  "limitations": [
+    "Discrete CAD checks",
+    "No slicer or physical print validation",
+    "No physical load or grip tests"
+  ],
+  "lock_variant": {
+    "locations": [
+      "top of horizontal rail",
+      "front of vertical slide"
+    ],
+    "interchangeable_printed_screws": 2,
+    "thread_major_diameter_mm": 12,
+    "thread_root_diameter_mm": 9.8,
+    "thread_pitch_mm": 3.5,
+    "shaft_length_mm": 24,
+    "wing_span_mm": 36,
+    "tip_retraction_mm": 1,
+    "thread_rotation_and_contact_positions_checked": 14
+  }
+}
